@@ -1,0 +1,139 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 11 19:50:14 2022
+# Process ID: 8904
+# Current directory: C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4592 C:\Users\DELL\Desktop\BETSS\hdmi_inout_po_konsultacji\hdmi_inout\hdmi_inout.xpr
+# Log file: C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/vivado.log
+# Journal file: C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd}
+connect_bd_net [get_bd_ports reset_rtl] [get_bd_pins rgb2dvi_0/aRst]
+startgroup
+set_property -dict [list CONFIG.USE_RESET {false}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+make_wrapper -files [get_files C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+make_wrapper -files [get_files C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50}] [get_bd_cells clk_wiz_0]
+endgroup
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210351B04B86A]
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+make_wrapper -files [get_files C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+make_wrapper -files [get_files C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+make_wrapper -files [get_files C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+reset_run hdmi_inout_bd_clk_wiz_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {250} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {200} CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {50} CONFIG.MMCM_CLKOUT0_DIVIDE_F {4.000} CONFIG.MMCM_CLKOUT1_DIVIDE {5} CONFIG.MMCM_CLKOUT2_DIVIDE {20} CONFIG.CLKOUT1_JITTER {104.759} CONFIG.CLKOUT2_JITTER {109.241} CONFIG.CLKOUT3_JITTER {143.688}] [get_bd_cells clk_wiz_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_1
+endgroup
+set_property location {2 296 660} [get_bd_cells clk_wiz_1]
+set_property -dict [list CONFIG.USE_LOCKED {false} CONFIG.USE_RESET {false}] [get_bd_cells clk_wiz_1]
+connect_bd_net [get_bd_ports sys_clock] [get_bd_pins clk_wiz_1/clk_in1]
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {200.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} CONFIG.CLKOUT1_JITTER {114.829}] [get_bd_cells clk_wiz_1]
+endgroup
+startgroup
+endgroup
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]
+connect_bd_net [get_bd_pins clk_wiz_1/clk_out1] [get_bd_pins MIPI_D_PHY_RX_0/RefClk]
+connect_bd_net [get_bd_pins clk_wiz_1/clk_out1] [get_bd_pins MIPI_CSI_2_RX_0/video_aclk]
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50} CONFIG.CLKOUT3_USED {false} CONFIG.MMCM_CLKOUT1_DIVIDE {20} CONFIG.MMCM_CLKOUT2_DIVIDE {1} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT2_JITTER {143.688}] [get_bd_cells clk_wiz_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.USE_LOCKED {false}] [get_bd_cells clk_wiz_0]
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins v_tc_0/clk]
+regenerate_bd_layout
+connect_bd_net [get_bd_ports reset_rtl] [get_bd_pins MIPI_CSI_2_RX_0/video_aresetn]
+undo
+save_bd_design
+make_wrapper -files [get_files C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+make_wrapper -files [get_files C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+reset_run hdmi_inout_bd_clk_wiz_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out2] [get_bd_cells clk_wiz_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+endgroup
+set_property location {2 426 435} [get_bd_cells clk_wiz_0]
+set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {200.000} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50.000} CONFIG.USE_LOCKED {false} CONFIG.USE_RESET {false} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} CONFIG.MMCM_CLKOUT1_DIVIDE {20} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {114.829} CONFIG.CLKOUT2_JITTER {151.636} CONFIG.CLKOUT2_PHASE_ERROR {98.575}] [get_bd_cells clk_wiz_0]
+connect_bd_net [get_bd_ports sys_clock] [get_bd_pins clk_wiz_0/clk_in1]
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {250.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {4.000} CONFIG.CLKOUT1_JITTER {110.209}] [get_bd_cells clk_wiz_0]
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins v_tc_0/clk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins v_tc_0/s_axi_aclk]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0]
+connect_bd_net [get_bd_ports sys_clock] [get_bd_pins clk_wiz_1/clk_in1]
+connect_bd_net [get_bd_ports sys_clock] [get_bd_pins clk_wiz_0/clk_in1]
+connect_bd_net [get_bd_pins AXI_BayerToRGB_0/StreamClk] [get_bd_pins clk_wiz_1/clk_out1]
+regenerate_bd_layout
+save_bd_design
+regenerate_bd_layout
+save_bd_design
+make_wrapper -files [get_files C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+make_wrapper -files [get_files C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+startgroup
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} CONFIG.CLKIN1_JITTER_PS {80.0} CONFIG.MMCM_CLKFBOUT_MULT_F {8.000} CONFIG.MMCM_CLKIN1_PERIOD {8.000} CONFIG.CLKOUT1_JITTER {109.241} CONFIG.CLKOUT1_PHASE_ERROR {96.948}] [get_bd_cells clk_wiz_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} CONFIG.CLKIN1_JITTER_PS {80.0} CONFIG.MMCM_CLKFBOUT_MULT_F {8.000} CONFIG.MMCM_CLKIN1_PERIOD {8.000} CONFIG.CLKOUT1_JITTER {104.759} CONFIG.CLKOUT1_PHASE_ERROR {96.948} CONFIG.CLKOUT2_JITTER {143.688} CONFIG.CLKOUT2_PHASE_ERROR {96.948}] [get_bd_cells clk_wiz_0]
+endgroup
+startgroup
+endgroup
+startgroup
+endgroup
+save_bd_design
+make_wrapper -files [get_files C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+make_wrapper -files [get_files C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+reset_run hdmi_inout_bd_clk_wiz_1_0_synth_1
+reset_run hdmi_inout_bd_clk_wiz_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+make_wrapper -files [get_files C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+delete_bd_objs [get_bd_cells clk_wiz_1]
+startgroup
+set_property -dict [list CONFIG.CLKOUT3_USED {true} CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {200.000} CONFIG.MMCM_CLKOUT2_DIVIDE {5} CONFIG.NUM_OUT_CLKS {3} CONFIG.CLKOUT3_JITTER {109.241} CONFIG.CLKOUT3_PHASE_ERROR {96.948}] [get_bd_cells clk_wiz_0]
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out3] [get_bd_pins MIPI_D_PHY_RX_0/RefClk]
+regenerate_bd_layout
+save_bd_design
+make_wrapper -files [get_files C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+make_wrapper -files [get_files C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+reset_run hdmi_inout_bd_clk_wiz_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
