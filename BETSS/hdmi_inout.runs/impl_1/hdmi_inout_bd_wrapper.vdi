@@ -2,22 +2,22 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri May 13 19:22:02 2022
-# Process ID: 17052
+# Start of session at: Sun May 15 19:51:25 2022
+# Process ID: 17476
 # Current directory: C:/Users/DELL/Desktop/repoBETSS/MTM_SDUP_project/BETSS/hdmi_inout.runs/impl_1
 # Command line: vivado.exe -log hdmi_inout_bd_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source hdmi_inout_bd_wrapper.tcl -notrace
 # Log file: C:/Users/DELL/Desktop/repoBETSS/MTM_SDUP_project/BETSS/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.vdi
 # Journal file: C:/Users/DELL/Desktop/repoBETSS/MTM_SDUP_project/BETSS/hdmi_inout.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source hdmi_inout_bd_wrapper.tcl -notrace
-Command: open_checkpoint hdmi_inout_bd_wrapper_placed.dcp
+Command: open_checkpoint hdmi_inout_bd_wrapper_routed.dcp
 
 Starting open_checkpoint Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 301.125 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 301.074 ; gain = 0.000
 INFO: [Device 21-403] Loading part xc7z020clg400-1
-INFO: [Netlist 29-17] Analyzing 1236 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-17] Analyzing 71 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2019.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Timing 38-478] Restoring timing data from binary archive.
@@ -27,39 +27,41 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1395.441 ; gain = 5.203
-Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1395.441 ; gain = 5.203
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1395.441 ; gain = 0.000
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.226 . Memory (MB): peak = 1278.875 ; gain = 4.938
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.226 . Memory (MB): peak = 1278.875 ; gain = 4.938
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1278.875 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 624 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 608 instances
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances
+  A total of 8 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
 
 INFO: [Project 1-604] Checkpoint was created with Vivado v2019.1 (64-bit) build 2552052
-open_checkpoint: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1395.441 ; gain = 1094.316
-Command: route_design
+open_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1278.875 ; gain = 977.801
+Command: write_bitstream -force hdmi_inout_bd_wrapper.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
-Running DRC as a precondition to command route_design
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
 INFO: [DRC 23-27] Running DRC with 2 threads
-ERROR: [DRC PDRC-43] PLL_adv_ClkFrequency_div_no_dclk: The computed value 2500.000 MHz (CLKIN1_PERIOD, net clk_out1) for the VCO operating frequency of the PLLE2_ADV site PLLE2_ADV_X1Y0 (cell hdmi_inout_bd_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/GenPLL.DVI_ClkGenerator) falls outside the operating range of the PLL VCO frequency for this device (800.000 - 1600.000 MHz). The computed value is (CLKFBOUT_MULT_F * 1000 / (CLKINx_PERIOD * DIVCLK_DIVIDE)). Please adjust either the input period CLKINx_PERIOD (4.000000), multiplication factor CLKFBOUT_MULT_F (10) or the division factor DIVCLK_DIVIDE (1), in order to achieve a VCO frequency within the rated operating range for this device.
-INFO: [Vivado_Tcl 4-198] DRC finished with 1 Errors
-INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
-ERROR: [Vivado_Tcl 4-16] Error(s) found during DRC. Router not run.
+WARNING: [DRC ZPS7-1] PS7 block required: The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./hdmi_inout_bd_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-186] 'C:/Users/DELL/Desktop/repoBETSS/MTM_SDUP_project/BETSS/hdmi_inout.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sun May 15 19:52:06 2022. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-16 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
-route_design failed
-route_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:01 . Memory (MB): peak = 1481.746 ; gain = 86.305
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1481.746 ; gain = 0.000
-INFO: [Timing 38-480] Writing timing data to binary archive.
-Writing placer database...
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 1481.746 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/DELL/Desktop/repoBETSS/MTM_SDUP_project/BETSS/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper_routed_error.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1481.746 ; gain = 0.000
-ERROR: [Common 17-39] 'route_design' failed due to earlier errors.
-
-INFO: [Common 17-206] Exiting Vivado at Fri May 13 19:23:38 2022...
+23 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1764.910 ; gain = 486.035
+INFO: [Common 17-206] Exiting Vivado at Sun May 15 19:52:07 2022...

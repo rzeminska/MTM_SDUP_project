@@ -19,6 +19,7 @@ proc create_report { reportName command } {
 }
 set_param chipscope.maxJobs 3
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -27,47 +28,29 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.cache/wt [current_project]
 set_property parent.project_path C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.xpr [current_project]
-set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo-z7-20:part0:1.1 [current_project]
-set_property ip_repo_paths {
-  c:/Users/DELL/Desktop/vivado_ip_blocks/vivado-library
-  c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.ip_user_files
-} [current_project]
+set_property ip_repo_paths c:/Users/DELL/Desktop/vivado_ip_blocks/vivado-library [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v
 add_files C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd
+set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_dvi2rgb_0_0/src/ila_timing_workaround.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_dvi2rgb_0_0/src/dvi2rgb.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_dvi2rgb_0_0/src/dvi2rgb_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_dvi2rgb_0_0/src/ila_pixclk/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_dvi2rgb_0_0/src/ila_pixclk/ila_pixclk_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_dvi2rgb_0_0/src/ila_refclk/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_dvi2rgb_0_0/src/ila_refclk/ila_refclk_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_rgb2dvi_0_0/src/rgb2dvi.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_rgb2dvi_0_0/src/rgb2dvi_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_CSI_2_RX_0_0/hdl/ila_rxclk/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_CSI_2_RX_0_0/hdl/ila_rxclk/ila_rxclk_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_CSI_2_RX_0_0/hdl/ila_rxclk_lane/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_CSI_2_RX_0_0/hdl/ila_rxclk_lane/ila_rxclk_lane_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_CSI_2_RX_0_0/hdl/ila_vidclk/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_CSI_2_RX_0_0/hdl/ila_vidclk/ila_vidclk_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_D_PHY_RX_0_0/hdl/MIPI_DPHY_Receiver.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_D_PHY_RX_0_0/hdl/MIPI_DPHY_Receiver_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_D_PHY_RX_0_0/hdl/MIPI_DPHY_Receiver_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_D_PHY_RX_0_0/hdl/ila_sfen_rxclk/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_D_PHY_RX_0_0/hdl/ila_sfen_rxclk/ila_sfen_rxclk_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_D_PHY_RX_0_0/hdl/ila_sfen_refclk/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_D_PHY_RX_0_0/hdl/ila_sfen_refclk/ila_sfen_refclk_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_D_PHY_RX_0_0/hdl/ila_scnn_refclk/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_MIPI_D_PHY_RX_0_0/hdl/ila_scnn_refclk/ila_scnn_refclk_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_v_tc_0_1/hdmi_inout_bd_v_tc_0_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_v_tc_0_1/hdmi_inout_bd_v_tc_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_clk_wiz_0_1/hdmi_inout_bd_clk_wiz_0_1_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_clk_wiz_0_1/hdmi_inout_bd_clk_wiz_0_1.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_clk_wiz_0_1/hdmi_inout_bd_clk_wiz_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_clk_wiz_0_0/hdmi_inout_bd_clk_wiz_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_clk_wiz_0_0/hdmi_inout_bd_clk_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_clk_wiz_0_0/hdmi_inout_bd_clk_wiz_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being

@@ -156,96 +156,58 @@ proc create_root_design { parentCell } {
 
 
   # Create interface ports
-  set dphy_hs_clock [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 dphy_hs_clock ]
+  set hdmi_in_ddc [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:iic_rtl:1.0 hdmi_in_ddc ]
+
+  set hdmi_rx [ create_bd_intf_port -mode Slave -vlnv digilentinc.com:interface:tmds_rtl:1.0 hdmi_rx ]
 
   set hdmi_tx [ create_bd_intf_port -mode Master -vlnv digilentinc.com:interface:tmds_rtl:1.0 hdmi_tx ]
 
 
   # Create ports
-  set dphy_clk_lp_n [ create_bd_port -dir I dphy_clk_lp_n ]
-  set dphy_clk_lp_p [ create_bd_port -dir I dphy_clk_lp_p ]
-  set dphy_data_hs_n [ create_bd_port -dir I -from 1 -to 0 dphy_data_hs_n ]
-  set dphy_data_hs_p [ create_bd_port -dir I -from 1 -to 0 dphy_data_hs_p ]
-  set dphy_data_lp_n [ create_bd_port -dir I -from 1 -to 0 dphy_data_lp_n ]
-  set dphy_data_lp_p [ create_bd_port -dir I -from 1 -to 0 dphy_data_lp_p ]
   set hdmi_rx_hpd [ create_bd_port -dir O -from 0 -to 0 hdmi_rx_hpd ]
   set reset_rtl [ create_bd_port -dir I -type rst reset_rtl ]
   set_property -dict [ list \
    CONFIG.POLARITY {ACTIVE_HIGH} \
  ] $reset_rtl
-  set sys_clock [ create_bd_port -dir I sys_clock ]
-
-  # Create instance: AXI_BayerToRGB_0, and set properties
-  set AXI_BayerToRGB_0 [ create_bd_cell -type ip -vlnv digilentinc.com:user:AXI_BayerToRGB:1.0 AXI_BayerToRGB_0 ]
-
-  # Create instance: MIPI_CSI_2_RX_0, and set properties
-  set MIPI_CSI_2_RX_0 [ create_bd_cell -type ip -vlnv digilentinc.com:ip:MIPI_CSI_2_RX:1.2 MIPI_CSI_2_RX_0 ]
-
-  # Create instance: MIPI_D_PHY_RX_0, and set properties
-  set MIPI_D_PHY_RX_0 [ create_bd_cell -type ip -vlnv digilentinc.com:ip:MIPI_D_PHY_RX:1.3 MIPI_D_PHY_RX_0 ]
+  set sys_clock [ create_bd_port -dir I -type clk sys_clock ]
+  set_property -dict [ list \
+   CONFIG.FREQ_HZ {125000000} \
+   CONFIG.PHASE {0.000} \
+ ] $sys_clock
 
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
   set_property -dict [ list \
-   CONFIG.CLKIN1_JITTER_PS {80.0} \
-   CONFIG.CLKOUT1_JITTER {104.759} \
-   CONFIG.CLKOUT1_PHASE_ERROR {96.948} \
-   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {250.000} \
-   CONFIG.CLKOUT2_JITTER {143.688} \
-   CONFIG.CLKOUT2_PHASE_ERROR {96.948} \
-   CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50.000} \
-   CONFIG.CLKOUT2_USED {true} \
-   CONFIG.CLKOUT3_JITTER {109.241} \
-   CONFIG.CLKOUT3_PHASE_ERROR {96.948} \
-   CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {200.000} \
-   CONFIG.CLKOUT3_USED {true} \
+   CONFIG.CLKOUT1_JITTER {109.241} \
+   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {200} \
    CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} \
-   CONFIG.MMCM_CLKFBOUT_MULT_F {8.000} \
-   CONFIG.MMCM_CLKIN1_PERIOD {8.000} \
-   CONFIG.MMCM_CLKOUT0_DIVIDE_F {4.000} \
-   CONFIG.MMCM_CLKOUT1_DIVIDE {20} \
-   CONFIG.MMCM_CLKOUT2_DIVIDE {5} \
-   CONFIG.NUM_OUT_CLKS {3} \
-   CONFIG.USE_LOCKED {false} \
-   CONFIG.USE_RESET {false} \
+   CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} \
+   CONFIG.USE_BOARD_FLOW {true} \
  ] $clk_wiz_0
+
+  # Create instance: dvi2rgb_0, and set properties
+  set dvi2rgb_0 [ create_bd_cell -type ip -vlnv digilentinc.com:ip:dvi2rgb:2.0 dvi2rgb_0 ]
+  set_property -dict [ list \
+   CONFIG.kClkRange {1} \
+ ] $dvi2rgb_0
 
   # Create instance: rgb2dvi_0, and set properties
   set rgb2dvi_0 [ create_bd_cell -type ip -vlnv digilentinc.com:ip:rgb2dvi:1.4 rgb2dvi_0 ]
-
-  # Create instance: v_tc_0, and set properties
-  set v_tc_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:v_tc:6.1 v_tc_0 ]
 
   # Create instance: xlconstant_0, and set properties
   set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
 
   # Create interface connections
-  connect_bd_intf_net -intf_net MIPI_D_PHY_RX_0_D_PHY_PPI [get_bd_intf_pins MIPI_CSI_2_RX_0/rx_mipi_ppi] [get_bd_intf_pins MIPI_D_PHY_RX_0/D_PHY_PPI]
-  connect_bd_intf_net -intf_net dphy_hs_clock_1 [get_bd_intf_ports dphy_hs_clock] [get_bd_intf_pins MIPI_D_PHY_RX_0/dphy_hs_clock]
+  connect_bd_intf_net -intf_net dvi2rgb_0_DDC [get_bd_intf_ports hdmi_in_ddc] [get_bd_intf_pins dvi2rgb_0/DDC]
+  connect_bd_intf_net -intf_net dvi2rgb_0_RGB [get_bd_intf_pins dvi2rgb_0/RGB] [get_bd_intf_pins rgb2dvi_0/RGB]
+  connect_bd_intf_net -intf_net hdmi_rx_1 [get_bd_intf_ports hdmi_rx] [get_bd_intf_pins dvi2rgb_0/TMDS]
   connect_bd_intf_net -intf_net rgb2dvi_0_TMDS [get_bd_intf_ports hdmi_tx] [get_bd_intf_pins rgb2dvi_0/TMDS]
 
   # Create port connections
-  connect_bd_net -net AXI_BayerToRGB_0_m_axis_video_tdata [get_bd_pins AXI_BayerToRGB_0/m_axis_video_tdata] [get_bd_pins rgb2dvi_0/vid_pData]
-  connect_bd_net -net AXI_BayerToRGB_0_s_axis_video_tready [get_bd_pins AXI_BayerToRGB_0/s_axis_video_tready] [get_bd_pins MIPI_CSI_2_RX_0/m_axis_video_tready]
-  connect_bd_net -net MIPI_CSI_2_RX_0_m_axis_video_tdata [get_bd_pins AXI_BayerToRGB_0/s_axis_video_tdata] [get_bd_pins MIPI_CSI_2_RX_0/m_axis_video_tdata]
-  connect_bd_net -net MIPI_CSI_2_RX_0_m_axis_video_tlast [get_bd_pins AXI_BayerToRGB_0/s_axis_video_tlast] [get_bd_pins MIPI_CSI_2_RX_0/m_axis_video_tlast]
-  connect_bd_net -net MIPI_CSI_2_RX_0_m_axis_video_tuser [get_bd_pins AXI_BayerToRGB_0/s_axis_video_tuser] [get_bd_pins MIPI_CSI_2_RX_0/m_axis_video_tuser]
-  connect_bd_net -net MIPI_CSI_2_RX_0_m_axis_video_tvalid [get_bd_pins AXI_BayerToRGB_0/s_axis_video_tvalid] [get_bd_pins MIPI_CSI_2_RX_0/m_axis_video_tvalid]
-  connect_bd_net -net MIPI_D_PHY_RX_0_RxByteClkHS [get_bd_pins MIPI_CSI_2_RX_0/RxByteClkHS] [get_bd_pins MIPI_D_PHY_RX_0/RxByteClkHS]
-  connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins v_tc_0/s_axi_aclk]
-  connect_bd_net -net clk_wiz_0_clk_out3 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins rgb2dvi_0/PixelClk] [get_bd_pins v_tc_0/clk]
-  connect_bd_net -net clk_wiz_1_clk_out1 [get_bd_pins AXI_BayerToRGB_0/StreamClk] [get_bd_pins MIPI_CSI_2_RX_0/video_aclk] [get_bd_pins MIPI_D_PHY_RX_0/RefClk] [get_bd_pins clk_wiz_0/clk_out3]
-  connect_bd_net -net dphy_clk_lp_n_1 [get_bd_ports dphy_clk_lp_n] [get_bd_pins MIPI_D_PHY_RX_0/dphy_clk_lp_n]
-  connect_bd_net -net dphy_clk_lp_p_1 [get_bd_ports dphy_clk_lp_p] [get_bd_pins MIPI_D_PHY_RX_0/dphy_clk_lp_p]
-  connect_bd_net -net dphy_data_hs_n_1 [get_bd_ports dphy_data_hs_n] [get_bd_pins MIPI_D_PHY_RX_0/dphy_data_hs_n]
-  connect_bd_net -net dphy_data_hs_p_1 [get_bd_ports dphy_data_hs_p] [get_bd_pins MIPI_D_PHY_RX_0/dphy_data_hs_p]
-  connect_bd_net -net dphy_data_lp_n_1 [get_bd_ports dphy_data_lp_n] [get_bd_pins MIPI_D_PHY_RX_0/dphy_data_lp_n]
-  connect_bd_net -net dphy_data_lp_p_1 [get_bd_ports dphy_data_lp_p] [get_bd_pins MIPI_D_PHY_RX_0/dphy_data_lp_p]
-  connect_bd_net -net reset_rtl_1 [get_bd_ports reset_rtl] [get_bd_pins MIPI_D_PHY_RX_0/aRst] [get_bd_pins rgb2dvi_0/aRst]
+  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins dvi2rgb_0/RefClk]
+  connect_bd_net -net dvi2rgb_0_PixelClk [get_bd_pins dvi2rgb_0/PixelClk] [get_bd_pins rgb2dvi_0/PixelClk]
+  connect_bd_net -net reset_rtl_1 [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/reset] [get_bd_pins dvi2rgb_0/aRst] [get_bd_pins rgb2dvi_0/aRst]
   connect_bd_net -net sys_clock_1 [get_bd_ports sys_clock] [get_bd_pins clk_wiz_0/clk_in1]
-  connect_bd_net -net v_tc_0_active_video_out [get_bd_pins rgb2dvi_0/vid_pVDE] [get_bd_pins v_tc_0/active_video_out]
-  connect_bd_net -net v_tc_0_hsync_out [get_bd_pins rgb2dvi_0/vid_pHSync] [get_bd_pins v_tc_0/hsync_out]
-  connect_bd_net -net v_tc_0_vsync_out [get_bd_pins rgb2dvi_0/vid_pVSync] [get_bd_pins v_tc_0/vsync_out]
   connect_bd_net -net xlconstant_0_dout [get_bd_ports hdmi_rx_hpd] [get_bd_pins xlconstant_0/dout]
 
   # Create address segments
