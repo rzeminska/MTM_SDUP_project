@@ -50,7 +50,7 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_dvi2rgb_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_rgb2dvi_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_dvi2rgb_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_clk_wiz_0_0"/>
 </GenRun>
