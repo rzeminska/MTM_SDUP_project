@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Tue May 31 20:03:27 2022
+# Process ID: 11048
+# Current directory: C:/Users/DELL/Desktop/test/MTM_SDUP_project/BETSS/hdmi_inout.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/DELL/Desktop/test/MTM_SDUP_project/BETSS/hdmi_inout.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/DELL/Desktop/test/MTM_SDUP_project/BETSS/hdmi_inout.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

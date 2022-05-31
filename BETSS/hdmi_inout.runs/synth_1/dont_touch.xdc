@@ -6,16 +6,55 @@
 # Block Designs: bd/hdmi_inout_bd/hdmi_inout_bd.bd
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd || ORIG_REF_NAME==hdmi_inout_bd} -quiet] -quiet
 
-# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_dvi2rgb_0_0/hdmi_inout_bd_dvi2rgb_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_dvi2rgb_0_0 || ORIG_REF_NAME==hdmi_inout_bd_dvi2rgb_0_0} -quiet] -quiet
-
-# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_rgb2dvi_0_0/hdmi_inout_bd_rgb2dvi_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_rgb2dvi_0_0 || ORIG_REF_NAME==hdmi_inout_bd_rgb2dvi_0_0} -quiet] -quiet
-
-# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_clk_wiz_0_0/hdmi_inout_bd_clk_wiz_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_clk_wiz_0_0 || ORIG_REF_NAME==hdmi_inout_bd_clk_wiz_0_0} -quiet] -quiet
-
 # IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_xlconstant_0_0/hdmi_inout_bd_xlconstant_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_xlconstant_0_0 || ORIG_REF_NAME==hdmi_inout_bd_xlconstant_0_0} -quiet] -quiet
+
+# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_dvi2rgb_0_1/hdmi_inout_bd_dvi2rgb_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_dvi2rgb_0_1 || ORIG_REF_NAME==hdmi_inout_bd_dvi2rgb_0_1} -quiet] -quiet
+
+# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_processing_system7_0_1/hdmi_inout_bd_processing_system7_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_processing_system7_0_1 || ORIG_REF_NAME==hdmi_inout_bd_processing_system7_0_1} -quiet] -quiet
+
+# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_axi_vdma_0_1/hdmi_inout_bd_axi_vdma_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_axi_vdma_0_1 || ORIG_REF_NAME==hdmi_inout_bd_axi_vdma_0_1} -quiet] -quiet
+
+# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_axi_interconnect_0_0/hdmi_inout_bd_axi_interconnect_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_axi_interconnect_0_0 || ORIG_REF_NAME==hdmi_inout_bd_axi_interconnect_0_0} -quiet] -quiet
+
+# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_clk_wiz_0_1/hdmi_inout_bd_clk_wiz_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_clk_wiz_0_1 || ORIG_REF_NAME==hdmi_inout_bd_clk_wiz_0_1} -quiet] -quiet
+
+# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_v_vid_in_axi4s_0_0/hdmi_inout_bd_v_vid_in_axi4s_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_v_vid_in_axi4s_0_0 || ORIG_REF_NAME==hdmi_inout_bd_v_vid_in_axi4s_0_0} -quiet] -quiet
+
+# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_v_axi4s_vid_out_0_1/hdmi_inout_bd_v_axi4s_vid_out_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_v_axi4s_vid_out_0_1 || ORIG_REF_NAME==hdmi_inout_bd_v_axi4s_vid_out_0_1} -quiet] -quiet
+
+# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_rgb2dvi_0_1/hdmi_inout_bd_rgb2dvi_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_rgb2dvi_0_1 || ORIG_REF_NAME==hdmi_inout_bd_rgb2dvi_0_1} -quiet] -quiet
+
+# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_axi_interconnect_0_2/hdmi_inout_bd_axi_interconnect_0_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_axi_interconnect_0_2 || ORIG_REF_NAME==hdmi_inout_bd_axi_interconnect_0_2} -quiet] -quiet
+
+# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_xbar_2/hdmi_inout_bd_xbar_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_xbar_2 || ORIG_REF_NAME==hdmi_inout_bd_xbar_2} -quiet] -quiet
+
+# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_axi_interconnect_2_0/hdmi_inout_bd_axi_interconnect_2_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_axi_interconnect_2_0 || ORIG_REF_NAME==hdmi_inout_bd_axi_interconnect_2_0} -quiet] -quiet
+
+# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_proc_sys_reset_0_0/hdmi_inout_bd_proc_sys_reset_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_proc_sys_reset_0_0 || ORIG_REF_NAME==hdmi_inout_bd_proc_sys_reset_0_0} -quiet] -quiet
+
+# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_v_tc_0_0/hdmi_inout_bd_v_tc_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_v_tc_0_0 || ORIG_REF_NAME==hdmi_inout_bd_v_tc_0_0} -quiet] -quiet
+
+# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_auto_pc_0/hdmi_inout_bd_auto_pc_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_auto_pc_0 || ORIG_REF_NAME==hdmi_inout_bd_auto_pc_0} -quiet] -quiet
+
+# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_auto_pc_1/hdmi_inout_bd_auto_pc_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_auto_pc_1 || ORIG_REF_NAME==hdmi_inout_bd_auto_pc_1} -quiet] -quiet
+
+# IP: bd/hdmi_inout_bd/ip/hdmi_inout_bd_auto_pc_2/hdmi_inout_bd_auto_pc_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_inout_bd_auto_pc_2 || ORIG_REF_NAME==hdmi_inout_bd_auto_pc_2} -quiet] -quiet
 
 # XDC: bd/hdmi_inout_bd/hdmi_inout_bd_ooc.xdc

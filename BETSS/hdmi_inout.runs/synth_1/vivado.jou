@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Apr 26 21:01:03 2022
-# Process ID: 14872
-# Current directory: C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.runs/synth_1
+# Start of session at: Tue May 31 18:30:01 2022
+# Process ID: 19448
+# Current directory: C:/Users/DELL/Desktop/test/MTM_SDUP_project/BETSS/hdmi_inout.runs/synth_1
 # Command line: vivado.exe -log hdmi_inout_bd_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_inout_bd_wrapper.tcl
-# Log file: C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.runs/synth_1/hdmi_inout_bd_wrapper.vds
-# Journal file: C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.runs/synth_1\vivado.jou
+# Log file: C:/Users/DELL/Desktop/test/MTM_SDUP_project/BETSS/hdmi_inout.runs/synth_1/hdmi_inout_bd_wrapper.vds
+# Journal file: C:/Users/DELL/Desktop/test/MTM_SDUP_project/BETSS/hdmi_inout.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source hdmi_inout_bd_wrapper.tcl -notrace

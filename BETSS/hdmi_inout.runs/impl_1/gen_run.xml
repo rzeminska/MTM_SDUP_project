@@ -1,30 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1650999660">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1654014148">
   <File Type="BITSTR-BMM" Name="hdmi_inout_bd_wrapper_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="hdmi_inout_bd_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="hdmi_inout_bd_wrapper_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="hdmi_inout_bd_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="hdmi_inout_bd_wrapper.tcl"/>
+  <File Type="OPT-TIMING" Name="hdmi_inout_bd_wrapper_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="hdmi_inout_bd_wrapper_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="hdmi_inout_bd_wrapper_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="hdmi_inout_bd_wrapper_reports.tcl"/>
   <File Type="OPT-DRC" Name="hdmi_inout_bd_wrapper_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="hdmi_inout_bd_wrapper.hwdef"/>
   <File Type="PWROPT-DCP" Name="hdmi_inout_bd_wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="hdmi_inout_bd_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="hdmi_inout_bd_wrapper_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="hdmi_inout_bd_wrapper_placed.dcp"/>
   <File Type="PLACE-IO" Name="hdmi_inout_bd_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="hdmi_inout_bd_wrapper_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="hdmi_inout_bd_wrapper_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="hdmi_inout_bd_wrapper_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="hdmi_inout_bd_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="hdmi_inout_bd_wrapper_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="hdmi_inout_bd_wrapper_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="hdmi_inout_bd_wrapper.bgn"/>
+  <File Type="PLACE-TIMING" Name="hdmi_inout_bd_wrapper_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="hdmi_inout_bd_wrapper_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="hdmi_inout_bd_wrapper.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="hdmi_inout_bd_wrapper_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="hdmi_inout_bd_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="hdmi_inout_bd_wrapper_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="hdmi_inout_bd_wrapper.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="hdmi_inout_bd_wrapper_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="hdmi_inout_bd_wrapper_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="hdmi_inout_bd_wrapper_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="hdmi_inout_bd_wrapper_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="hdmi_inout_bd_wrapper_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="hdmi_inout_bd_wrapper_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="hdmi_inout_bd_wrapper.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="hdmi_inout_bd_wrapper_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="hdmi_inout_bd_wrapper.mmi"/>
@@ -38,17 +50,24 @@
   <File Type="ROUTE-TIMINGSUMMARY" Name="hdmi_inout_bd_wrapper_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="hdmi_inout_bd_wrapper_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="hdmi_inout_bd_wrapper_timing_summary_routed.rpx"/>
-  <File Type="RDI-RDI" Name="hdmi_inout_bd_wrapper.vdi"/>
+  <File Type="ROUTE-SIMILARITY" Name="hdmi_inout_bd_wrapper_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="hdmi_inout_bd_wrapper_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="hdmi_inout_bd_wrapper_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="hdmi_inout_bd_wrapper_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="hdmi_inout_bd_wrapper_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="hdmi_inout_bd_wrapper_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="hdmi_inout_bd_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="hdmi_inout_bd_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="hdmi_inout_bd_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="hdmi_inout_bd_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="hdmi_inout_bd_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="hdmi_inout_bd_wrapper_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="hdmi_inout_bd_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="hdmi_inout_bd_wrapper_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="hdmi_inout_bd_wrapper.rbt"/>
   <File Type="BITSTR-NKY" Name="hdmi_inout_bd_wrapper.nky"/>
   <File Type="BG-DRC" Name="hdmi_inout_bd_wrapper.drc"/>
+  <File Type="RDI-RDI" Name="hdmi_inout_bd_wrapper.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -102,7 +121,16 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_rgb2dvi_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_dvi2rgb_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_dvi2rgb_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_v_tc_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_axi_vdma_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_v_vid_in_axi4s_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_auto_pc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_proc_sys_reset_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_xbar_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_clk_wiz_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_v_axi4s_vid_out_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_processing_system7_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_inout_bd_auto_pc_1"/>
 </GenRun>

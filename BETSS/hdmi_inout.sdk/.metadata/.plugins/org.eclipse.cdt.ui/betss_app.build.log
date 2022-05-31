@@ -1,0 +1,14 @@
+19:00:39 **** Auto Build of configuration Debug for project betss_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building target: betss_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../betss_app_bsp/ps7_cortexa9_0/lib -o "betss_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ../../betss_app_bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): in function `_start':
+C:\Users\DELL\Desktop\test\MTM_SDUP_project\BETSS\hdmi_inout.sdk\betss_app_bsp\ps7_cortexa9_0\libsrc\standalone_v7_0\src/xil-crt0.S:138: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: betss_app.elf] Error 1
+
+19:00:40 Build Finished (took 481ms)
+

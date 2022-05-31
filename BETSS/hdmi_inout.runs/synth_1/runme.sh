@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout/hdmi_inout.runs/synth_1'
+HD_PWD='C:/Users/DELL/Desktop/test/MTM_SDUP_project/BETSS/hdmi_inout.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
