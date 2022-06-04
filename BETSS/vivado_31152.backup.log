@@ -1,0 +1,214 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun May 29 18:08:18 2022
+# Process ID: 31152
+# Current directory: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22524 D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.xpr
+# Log file: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/vivado.log
+# Journal file: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/DELL/Desktop/BETSS/hdmi_inout_po_konsultacji/hdmi_inout' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'D:/../AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store', nor could it be found using path 'C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'D:/vivado_ip_blocks/vivado-library', nor could it be found using path 'C:/Users/DELL/Desktop/vivado_ip_blocks/vivado-library'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/vivado_ip_blocks/vivado-library'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2019.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'hdmi_inout_bd.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+hdmi_inout_bd_rgb2dvi_0_0
+hdmi_inout_bd_dvi2rgb_0_0
+
+open_project: Time (s): cpu = 00:00:54 ; elapsed = 00:00:29 . Memory (MB): peak = 867.727 ; gain = 234.023
+update_compile_order -fileset sources_1
+open_bd_design {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd}
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'hdmi_tx' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'hdmi_rx' cannot be created
+Adding component instance block -- digilentinc.com:ip:dvi2rgb:2.0 - dvi2rgb_0
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.4 - rgb2dvi_0
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+CRITICAL WARNING: [BD 41-2161] Unable to find interface <hdmi_tx> in cell <> while setting up interface connections during loading of BD file.
+CRITICAL WARNING: [BD 41-2161] Unable to find interface <hdmi_rx> in cell <> while setting up interface connections during loading of BD file.
+WARNING: [BD 41-1731] Type mismatch between connected pins: /reset_rtl(rst) and /dvi2rgb_0/aRst(undef)
+Successfully read diagram <hdmi_inout_bd> from BD file <D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd>
+open_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1121.371 ; gain = 92.402
+set_property  ip_repo_paths  {d:/vivado_ip_blocks/vivado-library D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.ip_user_files/vivado-library} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/vivado_ip_blocks/vivado-library'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.ip_user_files/vivado-library'.
+delete_bd_objs [get_bd_intf_nets rgb2dvi_0_TMDS] [get_bd_intf_nets dvi2rgb_0_RGB] [get_bd_nets dvi2rgb_0_PixelClk] [get_bd_cells rgb2dvi_0]
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:rgb2dvi:1.4 rgb2dvi_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/clk_wiz_0/clk_out1 (200 MHz)" }  [get_bd_pins rgb2dvi_0/PixelClk]
+regenerate_bd_layout
+startgroup
+create_bd_intf_port -mode Master -vlnv digilentinc.com:interface:tmds_rtl:1.0 hdmi_out
+connect_bd_intf_net [get_bd_intf_pins rgb2dvi_0/TMDS] [get_bd_intf_ports hdmi_out]
+endgroup
+create_bd_intf_port -mode Master -vlnv xilinx.com:interface:hdmi_rtl:1.0 hdmi_rx
+delete_bd_objs [get_bd_intf_ports hdmi_rx]
+create_bd_port -dir I hdmi_rx
+set_property location {138 66} [get_bd_ports hdmi_rx]
+undo
+INFO: [Common 17-17] undo 'set_property location {138 66} [get_bd_ports hdmi_rx]'
+delete_bd_objs [get_bd_ports hdmi_rx]
+delete_bd_objs [get_bd_intf_nets hdmi_rx_1] [get_bd_intf_nets dvi2rgb_0_DDC] [get_bd_cells dvi2rgb_0]
+delete_bd_objs [get_bd_intf_nets rgb2dvi_0_TMDS] [get_bd_nets clk_wiz_0_clk_out1] [get_bd_cells rgb2dvi_0]
+delete_bd_objs [get_bd_intf_ports hdmi_in_ddc]
+delete_bd_objs [get_bd_intf_ports hdmi_out]
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:dvi2rgb:2.0 dvi2rgb_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:rgb2dvi:1.4 rgb2dvi_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {hdmi_in_ddc ( HDMI In ) } Manual_Source {Auto}}  [get_bd_intf_pins dvi2rgb_0/DDC]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:iic_rtl:1.0 hdmi_in_ddc
+INFO: [board_rule 100-100] connect_bd_intf_net /hdmi_in_ddc /dvi2rgb_0/DDC
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/clk_wiz_0/clk_out1 (200 MHz)" }  [get_bd_pins dvi2rgb_0/RefClk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/clk_wiz_0/clk_out1 (200 MHz)" }  [get_bd_pins rgb2dvi_0/PixelClk]
+endgroup
+regenerate_bd_layout
+startgroup
+create_bd_intf_port -mode Slave -vlnv digilentinc.com:interface:tmds_rtl:1.0 hdmi_rx
+connect_bd_intf_net [get_bd_intf_pins dvi2rgb_0/TMDS] [get_bd_intf_ports hdmi_rx]
+endgroup
+regenerate_bd_layout
+startgroup
+create_bd_intf_port -mode Master -vlnv digilentinc.com:interface:tmds_rtl:1.0 hdmi_out
+connect_bd_intf_net [get_bd_intf_pins rgb2dvi_0/TMDS] [get_bd_intf_ports hdmi_out]
+endgroup
+save_bd_design
+Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd> 
+Wrote  : <D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ui/bd_5df05ddf.ui> 
+set_property name hdmi_tx [get_bd_intf_ports hdmi_out]
+save_bd_design
+Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd> 
+Wrote  : <D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ui/bd_5df05ddf.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [BD 41-927] Following properties on pin /dvi2rgb_0/RefClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /rgb2dvi_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/rgb2dvi_0/vid_pData
+/rgb2dvi_0/vid_pVDE
+/rgb2dvi_0/vid_pHSync
+/rgb2dvi_0/vid_pVSync
+
+Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd> 
+VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v
+VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v
+VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+CRITICAL WARNING: [IP_Flow 19-4965] IP ila_pixclk was packaged with board value 'digilentinc.com:zybo-z7-10:part0:1.0'. Current project's board value is 'digilentinc.com:zybo-z7-20:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3422] Upgraded ila_pixclk (ILA (Integrated Logic Analyzer) 6.2) from revision 11 to revision 9
+CRITICAL WARNING: [IP_Flow 19-4965] IP ila_refclk was packaged with board value 'digilentinc.com:zybo-z7-10:part0:1.0'. Current project's board value is 'digilentinc.com:zybo-z7-20:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3422] Upgraded ila_refclk (ILA (Integrated Logic Analyzer) 6.2) from revision 11 to revision 9
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dvi2rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 .
+Exporting to file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd.hwh
+Generated Block Design Tcl file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd_bd.tcl
+Generated Hardware Definition File D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.hwdef
+[Sun May 29 18:27:10 2022] Launched hdmi_inout_bd_rgb2dvi_0_2_synth_1, hdmi_inout_bd_dvi2rgb_0_1_synth_1, synth_1...
+Run output will be captured here:
+hdmi_inout_bd_rgb2dvi_0_2_synth_1: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/hdmi_inout_bd_rgb2dvi_0_2_synth_1/runme.log
+hdmi_inout_bd_dvi2rgb_0_1_synth_1: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/hdmi_inout_bd_dvi2rgb_0_1_synth_1/runme.log
+synth_1: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/synth_1/runme.log
+[Sun May 29 18:27:10 2022] Launched impl_1...
+Run output will be captured here: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:03 ; elapsed = 00:01:03 . Memory (MB): peak = 1448.750 ; gain = 87.344
+connect_bd_intf_net [get_bd_intf_pins dvi2rgb_0/RGB] [get_bd_intf_pins rgb2dvi_0/RGB]
+regenerate_bd_layout
+save_bd_design
+Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd> 
+Wrote  : <D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ui/bd_5df05ddf.ui> 
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+WARNING: [BD 41-927] Following properties on pin /dvi2rgb_0/RefClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /rgb2dvi_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd> 
+VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v
+VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v
+VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+INFO: [BD 41-1662] The design 'hdmi_inout_bd.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v
+VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v
+VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 41-1662] The design 'hdmi_inout_bd.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v
+VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v
+VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dvi2rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 .
+Exporting to file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd.hwh
+Generated Block Design Tcl file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd_bd.tcl
+Generated Hardware Definition File D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.hwdef
+[Sun May 29 18:32:04 2022] Launched synth_1...
+Run output will be captured here: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/synth_1/runme.log
+[Sun May 29 18:32:04 2022] Launched impl_1...
+Run output will be captured here: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/runme.log
+startgroup
+set_property -dict [list CONFIG.kClkRange {1} CONFIG.kEdidFileName {dgl_1080p_cea.data}] [get_bd_cells dvi2rgb_0]
+endgroup
+save_bd_design
+Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd> 
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+WARNING: [BD 41-927] Following properties on pin /dvi2rgb_0/RefClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /rgb2dvi_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd> 
+VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v
+VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v
+VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v
+reset_run synth_1
+reset_run hdmi_inout_bd_dvi2rgb_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 41-1662] The design 'hdmi_inout_bd.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v
+VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v
+VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dvi2rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 .
+Exporting to file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd.hwh
+Generated Block Design Tcl file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd_bd.tcl
+Generated Hardware Definition File D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.hwdef
+[Sun May 29 18:34:52 2022] Launched hdmi_inout_bd_dvi2rgb_0_1_synth_1, synth_1...
+Run output will be captured here:
+hdmi_inout_bd_dvi2rgb_0_1_synth_1: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/hdmi_inout_bd_dvi2rgb_0_1_synth_1/runme.log
+synth_1: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/synth_1/runme.log
+[Sun May 29 18:34:52 2022] Launched impl_1...
+Run output will be captured here: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 29 18:42:17 2022...

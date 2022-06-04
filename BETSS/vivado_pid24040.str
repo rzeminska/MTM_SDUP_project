@@ -1,0 +1,2504 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 24040
+License: Customer
+
+Current time: 	Sat Jun 04 17:18:39 CEST 2022
+Time zone: 	Central European Standard Time (Europe/Belgrade)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 32 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	D:/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	kacpe
+User home directory: C:/Users/kacpe
+User working directory: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa
+User country: 	PL
+User language: 	pl
+User locale: 	pl_PL
+
+RDI_BASEROOT: D:/Vivado
+HDI_APPROOT: D:/Vivado/2019.1
+RDI_DATADIR: D:/Vivado/2019.1/data
+RDI_BINDIR: D:/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/kacpe/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/kacpe/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/kacpe/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	D:/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/vivado.log
+Vivado journal file location: 	D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/vivado.jou
+Engine tmp dir: 	D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/.Xil/Vivado-24040-kacper
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: D:/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Vivado/2019.1
+XILINX_SDK: D:/SDK/2019.1
+XILINX_VIVADO: D:/Vivado/2019.1
+XILINX_VIVADO_HLS: D:/Vivado/2019.1
+
+
+GUI allocated memory:	210 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 684 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 722 MB. GUI used memory: 49 MB. Current time: 6/4/22, 5:18:41 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 73 MB (+74128kb) [00:00:20]
+// [Engine Memory]: 800 MB (+687004kb) [00:00:20]
+// [GUI Memory]: 96 MB (+19738kb) [00:00:20]
+// [Engine Memory]: 840 MB (+87kb) [00:00:22]
+// WARNING: HEventQueue.dispatchEvent() is taking  4117 ms.
+// Tcl Message: open_project D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.ip_user_files/vivado-library'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kacpe/Downloads/ZYBO/Projects/linux_bd/repo/vivado-library'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2019.1/data/ip'. 
+// [GUI Memory]: 114 MB (+13895kb) [00:00:23]
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 887.852 ; gain = 198.328 
+// Project name: hdmi_inout; location: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa; part: xc7z020clg400-1
+// [Engine Memory]: 886 MB (+4444kb) [00:00:25]
+dismissDialog("Open Project"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 943 MB. GUI used memory: 56 MB. Current time: 6/4/22, 5:18:57 PM CEST
+// [Engine Memory]: 943 MB (+13169kb) [00:00:30]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_inout_bd_wrapper (hdmi_inout_bd_wrapper.v)]", 1); // B (F, cl)
+// PAPropertyPanels.initPanels (hdmi_inout_bd.bd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_inout_bd_wrapper (hdmi_inout_bd_wrapper.v), hdmi_inout_bd_i : hdmi_inout_bd (hdmi_inout_bd.bd)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_inout_bd_wrapper (hdmi_inout_bd_wrapper.v), hdmi_inout_bd_i : hdmi_inout_bd (hdmi_inout_bd.bd)]", 2, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// by (cl):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0 Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0 Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.4 - rgb2dvi_0 Adding component instance block -- digilentinc.com:ip:dvi2rgb:2.0 - dvi2rgb_0 
+// Tcl Message: Successfully read diagram <hdmi_inout_bd> from BD file <D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  1685 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 966 MB. GUI used memory: 59 MB. Current time: 6/4/22, 5:19:17 PM CEST
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1022.406 ; gain = 0.000 
+dismissDialog("Open Block Design"); // by (cl)
+// Elapsed time: 50 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (aH, cl)
+// [GUI Memory]: 126 MB (+6563kb) [00:01:47]
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_intf_nets dvi2rgb_0_RGB] 
+// [Engine Memory]: 993 MB (+3289kb) [00:01:50]
+// HMemoryUtils.trashcanNow. Engine heap size: 993 MB. GUI used memory: 68 MB. Current time: 6/4/22, 5:20:21 PM CEST
+// Tcl Command: 'set_property location {3.5 838 298} [get_bd_cells rgb2dvi_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3.5 838 298} [get_bd_cells rgb2dvi_0] 
+// Tcl Command: 'set_property location {4 854 -48} [get_bd_cells xlconstant_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 854 -48} [get_bd_cells xlconstant_0] 
+// Tcl Command: 'set_property location {1002 -46} [get_bd_ports hdmi_rx_hpd]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1002 -46} [get_bd_ports hdmi_rx_hpd] 
+// Elapsed time: 29 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cl)
+// Elapsed time: 10 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "video"); // OverlayTextField (aF, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI4-Stream to Video Out", 0, "AXI4-Stream to Video Out", 0, false); // L (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI4-Stream to Video Out", 0); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI4-Stream to Video Out", 0, "AXI4-Stream to Video Out", 0, false, false, false, false, false, true); // L (O, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// by (cl):  Add IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:v_axi4s_vid_out:4.0 v_axi4s_vid_out_0 
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // by (cl)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cl)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "video"); // OverlayTextField (aF, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Video In to AXI4-Stream", 11, "Video In to AXI4-Stream", 0, false); // L (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Video In to AXI4-Stream", 11); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Video In to AXI4-Stream", 11, "Video In to AXI4-Stream", 0, false, false, false, false, false, true); // L (O, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// by (cl):  Add IP : addNotify
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:v_vid_in_axi4s:4.0 v_vid_in_axi4s_0 
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // by (cl)
+// Elapsed time: 28 seconds
+selectButton(PAResourceQtoS.SystemTab_REPORT_IP_STATUS, "Report IP Status"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// by (cl):  Report IP Status : addNotify
+// Tcl Message: report_ip_status -name ip_status  
+dismissDialog("Report IP Status"); // by (cl)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cl)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// by (cl):  Upgrade IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: upgrade_ip -vlnv digilentinc.com:ip:dvi2rgb:2.0 [get_ips  hdmi_inout_bd_dvi2rgb_0_1] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated hdmi_inout_bd_dvi2rgb_0_1 to use current project options 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd>  Wrote  : <D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ui/bd_5df05ddf.ui>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips hdmi_inout_bd_dvi2rgb_0_1] -no_script -sync -force -quiet 
+// aI (cl): Generate Output Products: addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+dismissDialog("Generate Output Products"); // aI (cl)
+// Elapsed time: 1125 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cl)
+// Elapsed time: 11 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "video ti"); // OverlayTextField (aF, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Video Timing Controller", 4, "Video Timing Controller", 0, false); // L (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Video Timing Controller", 4); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Video Timing Controller", 4, "Video Timing Controller", 0, false, false, false, false, false, true); // L (O, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:v_tc:6.1 v_tc_0 
+// Tcl Message: endgroup 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,000 MB. GUI used memory: 72 MB. Current time: 6/4/22, 5:50:22 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  3931 ms.
+// [GUI Memory]: 139 MB (+7265kb) [00:39:00]
+// WARNING: HEventQueue.dispatchEvent() is taking  1435 ms.
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cl): Re-customize IP: addNotify
+// Elapsed time: 2271 seconds
+selectCheckBox((HResource) null, "Generate SerialClk internally from pixel clock.", false); // g (o, r): FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// Tcl Command: 'set_property -dict [list CONFIG.kGenerateSerialClk {false}] [get_bd_cells rgb2dvi_0]'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// r (cl): Re-customize IP: addNotify
+// by (r):  Customize IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.kGenerateSerialClk {false}] [get_bd_cells rgb2dvi_0] 
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // by (r)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cl): Re-customize IP: addNotify
+// Elapsed time: 73 seconds
+selectCheckBox((HResource) null, "Generate SerialClk internally from pixel clock.", true); // g (o, r): TRUE
+selectRadioButton((HResource) null, "MMCM"); // aT
+selectRadioButton((HResource) null, "PLL"); // aT
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins dvi2rgb_0/RGB] [get_bd_intf_pins v_vid_in_axi4s_0/vid_io_in] 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,000 MB. GUI used memory: 62 MB. Current time: 6/4/22, 6:20:23 PM CEST
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins v_vid_in_axi4s_0/vtiming_out] [get_bd_intf_pins v_tc_0/vtiming_in] 
+// Elapsed time: 34 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "System_zoom_fit"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins v_tc_0/vtiming_out] [get_bd_intf_pins v_axi4s_vid_out_0/vtiming_in] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins v_vid_in_axi4s_0/video_out] [get_bd_intf_pins v_axi4s_vid_out_0/video_in] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cl): Re-customize IP: addNotify
+// Elapsed time: 233 seconds
+selectCheckBox((HResource) null, "Interlaced Video Support", true); // g (o, r): TRUE
+selectCheckBox((HResource) null, "Interlaced Video Support", false); // g (o, r): FALSE
+selectCheckBox(PAResourceEtoH.HACGCIPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", true); // g (as, r): TRUE
+selectCheckBox(PAResourceEtoH.HACGCIPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", false); // g (as, r): FALSE
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Frame Sync Position", 2); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Default/Constant", 1); // bg (E, r)
+dismissDialog("Re-customize IP"); // r (cl)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cl)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "buff"); // OverlayTextField (aF, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Video Frame Buffer Read", 2, "Video Frame Buffer Read", 0, false); // L (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Video Frame Buffer Read", 2); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Video Frame Buffer Read", 2, "Video Frame Buffer Read", 0, false, false, false, false, false, true); // L (O, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// by (cl):  Add IP : addNotify
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:v_frmbuf_rd:2.1 v_frmbuf_rd_0 
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // by (cl)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cl): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // r (cl)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cl)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "uti"); // OverlayTextField (aF, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Utility Buffer", 2, "Utility Buffer", 0, false); // L (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Utility Buffer", 2); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Utility Buffer", 2, "Utility Buffer", 0, false, false, false, false, false, true); // L (O, ResizableWindow) - Double Click
+// by (cl):  Add IP : addNotify
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:util_ds_buf:2.1 util_ds_buf_0 
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // by (cl)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cl)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (aF, ResizableWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells util_ds_buf_0] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells v_frmbuf_rd_0] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_intf_nets dvi2rgb_0_RGB] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_intf_nets v_tc_0_vtiming_out] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_intf_nets v_vid_in_axi4s_0_vtiming_out] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_intf_nets v_vid_in_axi4s_0_video_out] 
+// Tcl Command: 'set_property location {2.5 402 -214} [get_bd_cells v_vid_in_axi4s_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2.5 402 -214} [get_bd_cells v_vid_in_axi4s_0] 
+// Tcl Command: 'set_property location {2.5 783 -157} [get_bd_cells v_tc_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2.5 783 -157} [get_bd_cells v_tc_0] 
+// Tcl Command: 'set_property location {2 789 -137} [get_bd_cells v_tc_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 789 -137} [get_bd_cells v_tc_0] 
+// WARNING: HEventQueue.dispatchEvent() is taking  1756 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4911 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10042 ms.
+// Thread: Finalizer
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+// Thread: AWT-Shutdown
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.AWTAutoShutdown.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: SyntheticaAnimation 25
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Java2D Disposer
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.Disposer.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Update Runs Swing Worker
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.experiment.A.construct(SourceFile:316)
+// 	at ui.frmwork.y.run(SourceFile:205)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Thread-1
+// Thread: Process Messages
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.frmwork.d.h.construct(SourceFile:133)
+// 	at ui.frmwork.y.run(SourceFile:205)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: AWT-Windows
+// 	at java.desktop@9.0.4/sun.awt.windows.WToolkit.eventLoop(Native Method)
+// 	at java.desktop@9.0.4/sun.awt.windows.WToolkit.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: SyntheticaCleanerThread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.StyleFactory$ComponentPropertyStore$1.run(StyleFactory.java:1847)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at com.jidesoft.plaf.synthetica.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:99)
+// Thread: Common-Cleaner
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/jdk.internal.ref.CleanerImpl.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// 	at java.base@9.0.4/jdk.internal.misc.InnocuousThread.run(Unknown Source)
+// Thread: Attach Listener
+// Thread: Signal Dispatcher
+// Thread: Batik CleanerThread
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at org.apache.batik.util.CleanerThread.run(CleanerThread.java:106)
+// Thread: Refresh Filesets Swing Worker
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.design.y.construct(SourceFile:2494)
+// 	at ui.frmwork.y.run(SourceFile:205)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: AWT-EventQueue-1
+// 	at java.desktop@9.0.4/sun.awt.windows.WGlobalCursorManager.findHeavyweightUnderCursor(Native Method)
+// 	at java.desktop@9.0.4/sun.awt.GlobalCursorManager._updateCursor(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.GlobalCursorManager.updateCursorImmediately(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.windows.WComponentPeer.updateCursorImmediately(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Component.updateCursorImmediately(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Container.validate(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$3.run(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$3.run(Unknown Source)
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@9.0.4/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager.validateInvalidComponents(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.access$500(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@9.0.4/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEvent(Unknown Source)
+// 	at ui.frmwork.b.d.dispatchEvent(SourceFile:88)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.run(Unknown Source)
+// Thread: hw_ila_monitor
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.mainLoop(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.run(Unknown Source)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: SyntheticaAnimation 70
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: TimerQueue
+// 	at java.base@9.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@9.0.4/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.DelayQueue.take(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.TimerQueue.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: main
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.PlanAhead.b(SourceFile:1095)
+// 	at ui.PlanAhead.jswMain(SourceFile:1150)
+// Thread: Reference Handler
+// 	at java.base@9.0.4/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.Reference.processPendingReferences(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Reference.access$000(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+// Thread: Monitor HEventQueue
+// 	at java.base@9.0.4/java.lang.Thread.dumpThreads(Native Method)
+// 	at java.base@9.0.4/java.lang.Thread.getAllStackTraces(Unknown Source)
+// 	at ui.utils.d.c.eAO(SourceFile:484)
+// 	at ui.frmwork.b.e.construct(SourceFile:140)
+// 	at ui.frmwork.y.run(SourceFile:205)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.utils.lnf.b.run(SourceFile:100)
+// WARNING: HEventQueue.dispatchEvent() is taking  2610 ms.
+// Elapsed time: 990 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cl)
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins dvi2rgb_0/RGB] [get_bd_intf_pins v_vid_in_axi4s_0/vid_io_in] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins v_vid_in_axi4s_0/vtiming_out] [get_bd_intf_pins v_tc_0/vtiming_in] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins v_tc_0/vtiming_out] [get_bd_intf_pins v_axi4s_vid_out_0/vtiming_in] 
+// u (cl): Make Connection: addNotify
+// Elapsed time: 49 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (u)
+dismissDialog("Make Connection"); // u (cl)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cl): Re-customize IP: addNotify
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Default/Constant", 1); // bg (E, r)
+selectComboBox("Video Mode (VIDEO_MODE)", "1080p", 2); // E (E, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// Tcl Command: 'set_property -dict [list CONFIG.VIDEO_MODE {1080p} CONFIG.GEN_F0_VSYNC_VSTART {1083} CONFIG.GEN_F1_VSYNC_VSTART {1083} CONFIG.GEN_HACTIVE_SIZE {1920} CONFIG.GEN_HSYNC_END {2052} CONFIG.GEN_HFRAME_SIZE {2200} CONFIG.GEN_F0_VSYNC_HSTART {1920} CONFIG.GEN_F1_VSYNC_HSTART {1920} CONFIG.GEN_F0_VSYNC_HEND {1920} CONFIG.GEN_F1_VSYNC_HEND {1920} CONFIG.GEN_F0_VFRAME_SIZE {1125} CONFIG.GEN_F1_VFRAME_SIZE {1125} CONFIG.GEN_F0_VSYNC_VEND {1088} CONFIG.GEN_F1_VSYNC_VEND {1088} CONFIG.GEN_F0_VBLANK_HEND {1920} CONFIG.GEN_F1_VBLANK_HEND {1920} CONFIG.GEN_HSYNC_START {2008} CONFIG.GEN_VACTIVE_SIZE {1080} CONFIG.GEN_F0_VBLANK_HSTART {1920} CONFIG.GEN_F1_VBLANK_HSTART {1920}] [get_bd_cells v_tc_0]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.VIDEO_MODE {1080p} CONFIG.GEN_F0_VSYNC_VSTART {1083} CONFIG.GEN_F1_VSYNC_VSTART {1083} CONFIG.GEN_HACTIVE_SIZE {1920} CONFIG.GEN_HSYNC_END {2052} CONFIG.GEN_HFRAME_SIZE {2200} CONFIG.GEN_F0_VSYNC_HSTART {1920} CONFIG.GEN_F1_VSYNC_HSTART {1920} CONFIG.GEN_F0_VSYNC_HEND {1920} CONFIG.GEN_F1_VSYNC_HEND {1920} CONFIG.GEN_F0_VFRAME_SIZE {1125} CONFIG.GEN_F1_VFRAME_SIZE {1125} CONFIG.GEN_F0_VSYNC_VEND {1088} CONFIG.GEN_F1_VSYNC_VEND {1088} CONFIG.GEN_F0_VBLANK_HEND {1920} CONFIG.GEN_F1_VBLANK_HEND {1920} CONFIG.GEN_HSYNC_START {2008} CONFIG.GEN_VACTIVE_SIZE {1080} CONFIG.GEN_F0_VBLANK_HSTART {1920} CONFIG.GEN_F1_VBLANK_HSTART {1920}] [get_bd_cells v_tc_0] 
+// Tcl Message: endgroup 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins v_vid_in_axi4s_0/video_out] [get_bd_intf_pins v_axi4s_vid_out_0/video_in] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cl): Re-customize IP: addNotify
+// Elapsed time: 17 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Frame Sync Position", 2); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Default/Constant", 1); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Detection/Generation", 0); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Default/Constant", 1); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Frame Sync Position", 2); // bg (E, r)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins v_axi4s_vid_out_0/vid_io_out] [get_bd_intf_pins rgb2dvi_0/RGB] 
+// Elapsed time: 11 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cl): Re-customize IP: addNotify
+// Elapsed time: 23 seconds
+selectCheckBox((HResource) null, "Include AXI4-Lite Interface", false); // g (o, r): FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// Tcl Command: 'set_property -dict [list CONFIG.HAS_AXI4_LITE {false}] [get_bd_cells v_tc_0]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.HAS_AXI4_LITE {false}] [get_bd_cells v_tc_0] 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cl): Re-customize IP: addNotify
+// Elapsed time: 38 seconds
+selectCheckBox((HResource) null, "Include AXI4-Lite Interface", true); // g (o, r): TRUE
+selectCheckBox((HResource) null, "Include AXI4-Lite Interface", false); // g (o, r): FALSE
+selectCheckBox((HResource) null, "Include AXI4-Lite Interface", true); // g (o, r): TRUE
+selectCheckBox((HResource) null, "Include AXI4-Lite Interface", false); // g (o, r): FALSE
+selectCheckBox((HResource) null, "Include AXI4-Lite Interface", true); // g (o, r): TRUE
+selectCheckBox((HResource) null, "Include AXI4-Lite Interface", false); // g (o, r): FALSE
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Default/Constant", 1); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Frame Sync Position", 2); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Detection/Generation", 0); // bg (E, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// Tcl Command: 'set_property -dict [list CONFIG.HAS_AXI4_LITE {false}] [get_bd_cells v_tc_0]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.HAS_AXI4_LITE {false}] [get_bd_cells v_tc_0] 
+// Tcl Message: endgroup 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins dvi2rgb_0/aPixelClkLckd] [get_bd_pins v_vid_in_axi4s_0/aclk] 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,000 MB. GUI used memory: 79 MB. Current time: 6/4/22, 6:50:25 PM CEST
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cl): Re-customize IP: addNotify
+// Elapsed time: 502 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cl)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i (N, cl)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 3); // i (N, cl)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cl)
+unMinimizeFrame(RDIResource.RDIViews_PROPERTIES, "Properties"); // az
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, cl)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cl)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i (c, cl)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "IP", 2); // i (c, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,000 MB. GUI used memory: 79 MB. Current time: 6/4/22, 7:20:26 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,000 MB. GUI used memory: 77 MB. Current time: 6/4/22, 7:50:26 PM CEST
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets hdmi_rx_1] [get_bd_intf_nets dvi2rgb_0_DDC] [get_bd_intf_nets dvi2rgb_0_RGB] [get_bd_nets clk_wiz_0_clk_out1] [get_bd_nets dvi2rgb_0_PixelClk] [get_bd_nets dvi2rgb_0_aPixelClkLckd] [get_bd_cells dvi2rgb_0] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets v_vid_in_axi4s_0_video_out] [get_bd_intf_nets v_vid_in_axi4s_0_vtiming_out] [get_bd_cells v_vid_in_axi4s_0] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets v_tc_0_vtiming_out] [get_bd_cells v_tc_0] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets v_axi4s_vid_out_0_vid_io_out] [get_bd_cells v_axi4s_vid_out_0] 
+// Elapsed time: 3771 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "System_zoom_fit"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// Tcl Message: delete_bd_objs [get_bd_intf_nets rgb2dvi_0_TMDS] [get_bd_cells rgb2dvi_0] 
+// TclEventType: RUN_DELETE
+// by (cl):  Confirm Delete : addNotify
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Confirm Delete"); // by (cl)
+// Elapsed time: 46 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cl)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "rgb"); // OverlayTextField (aF, ResizableWindow)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1, "User Repository", 0, true); // L (O, cl) - Node
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1, "User Repository", 0, true, false, false, false, true, false); // L (O, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceAtoD.CoreAndInterfacesBaseTreeTablePanel_REMOVE_FROM_PROJECT, "Remove from project"); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// ak (cl): Remove Repository: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ak)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: set_property  ip_repo_paths  {d:/vivado_ip_blocks/vivado-library c:/Users/kacpe/Downloads/ZYBO/Projects/linux_bd/repo/vivado-library} [current_project] 
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kacpe/Downloads/ZYBO/Projects/linux_bd/repo/vivado-library'. 
+dismissDialog("Remove Repository"); // ak (cl)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false); // L (O, cl)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, false, false, false, false, true, false); // L (O, cl) - Popup Trigger
+selectMenuItem(PAResourceAtoD.CoreAndInterfacesBaseTreeTablePanel_REMOVE_FROM_PROJECT, "Remove from project"); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// ak (cl): Remove Repository: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ak)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: set_property  ip_repo_paths  c:/Users/kacpe/Downloads/ZYBO/Projects/linux_bd/repo/vivado-library [current_project] 
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kacpe/Downloads/ZYBO/Projects/linux_bd/repo/vivado-library'. 
+dismissDialog("Remove Repository"); // ak (cl)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, true, false, false, false, true, false); // L (O, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceAtoD.CoreAndInterfacesBaseTreeTablePanel_REMOVE_FROM_PROJECT, "Remove from project"); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// ak (cl): Remove Repository: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ak)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: set_property  ip_repo_paths  {} [current_project] 
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+dismissDialog("Remove Repository"); // ak (cl)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, null, -1, null, -1, false, false, false, false, true, false); // L (O, cl) - Popup Trigger
+// Elapsed time: 80 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, null, -1, null, -1, false, false, false, false, true, false); // L (O, cl) - Popup Trigger
+selectMenuItem(PAResourceAtoD.CoreAndInterfacesBaseTreeTablePanel_ADD_REPOSITORY, "Add Repository..."); // ah (an, cl)
+// Elapsed time: 10 seconds
+setFolderChooser("D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.ip_user_files/ipki");
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.ip_user_files/ipki [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// by (cl):  Refresh All IP Repositories : addNotify
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.ip_user_files/ipki'. 
+// c (cl): Add Repository: addNotify
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+// [GUI Memory]: 151 MB (+5272kb) [02:41:06]
+dismissDialog("Add Repository"); // c (cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cl)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cl)
+// Elapsed time: 18 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "rgb"); // OverlayTextField (aF, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "DVI to RGB Video Decoder (Sink)", 0, "DVI to RGB Video Decoder (Sink)", 0, false); // L (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "DVI to RGB Video Decoder (Sink)", 0); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "DVI to RGB Video Decoder (Sink)", 0, "DVI to RGB Video Decoder (Sink)", 0, false, false, false, false, false, true); // L (O, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv digilentinc.com:ip:dvi2rgb:2.0 dvi2rgb_0 
+// Tcl Message: endgroup 
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cl)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "rgb"); // OverlayTextField (aF, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "RGB to DVI Video Encoder (Source)", 3, "RGB to DVI Video Encoder (Source)", 0, false); // L (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "RGB to DVI Video Encoder (Source)", 3); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "RGB to DVI Video Encoder (Source)", 3, "RGB to DVI Video Encoder (Source)", 0, false, false, false, false, false, true); // L (O, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv digilentinc.com:ip:rgb2dvi:1.4 rgb2dvi_0 
+// Tcl Message: endgroup 
+// Tcl Command: 'set_property location {3.5 830 132} [get_bd_cells rgb2dvi_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3.5 830 132} [get_bd_cells rgb2dvi_0] 
+// Tcl Command: 'set_property location {2.5 701 413} [get_bd_cells dvi2rgb_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2.5 701 413} [get_bd_cells dvi2rgb_0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins dvi2rgb_0/RefClk] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_ports hdmi_rx] [get_bd_intf_pins dvi2rgb_0/TMDS] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins dvi2rgb_0/RGB] [get_bd_intf_pins rgb2dvi_0/RGB] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins dvi2rgb_0/PixelClk] [get_bd_pins rgb2dvi_0/PixelClk] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_ports hdmi_in_ddc] [get_bd_intf_pins dvi2rgb_0/DDC] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_ports hdmi_tx] [get_bd_intf_pins rgb2dvi_0/TMDS] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports reset_rtl] [get_bd_pins rgb2dvi_0/aRst] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports reset_rtl] [get_bd_pins dvi2rgb_0/aRst] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cl): Re-customize IP: addNotify
+// Elapsed time: 40 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cl): Re-customize IP: addNotify
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// Tcl Command: 'set_property -dict [list CONFIG.kEdidFileName {dgl_1080p_cea.data}] [get_bd_cells dvi2rgb_0]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.kEdidFileName {dgl_1080p_cea.data}] [get_bd_cells dvi2rgb_0] 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cl): Re-customize IP: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Block Designs, hdmi_inout_bd]", 1, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a (cl): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Create HDL Wrapper"); // a (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// by (cl):  Create HDL Wrapper : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top 
+// Tcl Message: Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd>  Wrote  : <D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ui/bd_5df05ddf.ui>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v 
+dismissDialog("Create HDL Wrapper"); // by (cl)
+// TclEventType: FILE_SET_CHANGE
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // B (F, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cx' command handler elapsed time: 3 seconds
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// by (cl):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [BD 41-1662] The design 'hdmi_inout_bd.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: Wrote  : <D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ui/bd_5df05ddf.ui>  VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 . 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// Elapsed time: 14 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (by)
+// Tcl Message: INFO: [Common 17-365] Interrupt caught but 'launch_runs' cannot be canceled. Please wait for command to finish. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded ila_refclk (ILA (Integrated Logic Analyzer) 6.2) from revision 7 to revision 9 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded ila_pixclk (ILA (Integrated Logic Analyzer) 6.2) from revision 7 to revision 9 INFO: [BD 41-1029] Generation completed for the IP Integrator block dvi2rgb_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 . INFO: [BD 41-1171] User-interrupt detected : Generation halted successfully for IP Integrator design D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd INFO: [Common 17-681] Processing pending cancel. 
+// aY (cl): Launch Run Critical Messages: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,029 MB. GUI used memory: 147 MB. Current time: 6/4/22, 8:03:01 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,044 MB (+1233kb) [02:44:32]
+// Elapsed time: 71 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (aY)
+dismissDialog("Launch Run Critical Messages"); // aY (cl)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (cS, cl)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectTreeTableHeader(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "Upgrade", 1); // B (O, cl)
+selectTreeTableHeader(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "Upgrade", 1); // B (O, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// f (cl): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (cl)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// by (cl):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [BD 41-1662] The design 'hdmi_inout_bd.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block dvi2rgb_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 . 
+// Tcl Message: Exporting to file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd.hwh Generated Block Design Tcl file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd_bd.tcl Generated Hardware Definition File D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: FILE_SET_NEW
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP hdmi_inout_bd_clk_wiz_0_0, cache-ID = 3dba9bad7e2f9f5c; cache size = 18.198 MB. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 1,087 MB. GUI used memory: 87 MB. Current time: 6/4/22, 8:03:26 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 1,102 MB (+5751kb) [02:44:58]
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1419.613 ; gain = 53.316 
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 95 MB. Current time: 6/4/22, 8:04:31 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 295 seconds
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i (c, cl)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Interface", 2); // i (c, cl)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i (c, cl)
+// [GUI Memory]: 159 MB (+829kb) [02:49:57]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i (c, cl)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// ah (cl): Bitstream Generation Completed: addNotify
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// Elapsed time: 282 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// by (cl):  Open Implemented Design : addNotify
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,613 MB. GUI used memory: 98 MB. Current time: 6/4/22, 8:13:17 PM CEST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,118 MB. GUI used memory: 98 MB. Current time: 6/4/22, 8:13:36 PM CEST
+// [Engine Memory]: 2,118 MB (+1008121kb) [02:55:06]
+// Xgd.load filename: D:/Vivado/2019.1/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 0.7s
+// [Engine Memory]: 2,261 MB (+38841kb) [02:55:07]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 3.3s
+// [GUI Memory]: 177 MB (+10024kb) [02:55:10]
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2544 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg400-1 INFO: [Netlist 29-17] Analyzing 409 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.787 . Memory (MB): peak = 2324.984 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.787 . Memory (MB): peak = 2324.984 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2324.984 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 206 instances were transformed.   CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 192 instances   IOBUF => IOBUF (IBUF, OBUFT): 2 instances   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances  
+// Device view-level: 0,0
+// TclEventType: DRC_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 2471.148 ; gain = 1040.105 
+// TclEventType: DRC_ADDED
+// [GUI Memory]: 189 MB (+3334kb) [02:55:12]
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 199 MB (+367kb) [02:55:19]
+// WARNING: HEventQueue.dispatchEvent() is taking  5024 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 214 MB (+5752kb) [02:55:21]
+// WARNING: HEventQueue.dispatchEvent() is taking  2174 ms.
+// 'dR' command handler elapsed time: 42 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1034 ms.
+// Device view-level: 0,1
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK (aH, cl)
+// Elapsed time: 42 seconds
+dismissDialog("Open Implemented Design"); // by (cl)
+// Device view-level: 0,0
+// HMemoryUtils.trashcanNow. Engine heap size: 2,308 MB. GUI used memory: 161 MB. Current time: 6/4/22, 8:13:57 PM CEST
+// [Engine Memory]: 2,409 MB (+36764kb) [02:55:28]
+closeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // az (aK, cl)
+selectTab((HResource) null, (HResource) null, "Reports", 2); // aK (aH, cl)
+selectTab((HResource) null, (HResource) null, "Design Runs", 3); // aK (aH, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // U
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("Implementation", "Implemented Design", "DesignTask.RESULTS_ANALYSIS");
+// A (cl): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// by (cl):  Close : addNotify
+dismissDialog("Confirm Close"); // A (cl)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,433 MB. GUI used memory: 116 MB. Current time: 6/4/22, 8:14:14 PM CEST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,433 MB. GUI used memory: 117 MB. Current time: 6/4/22, 8:14:14 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1456 ms.
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// Tcl Message: close_design 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: DESIGN_CLOSE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+dismissDialog("Close"); // by (cl)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// WARNING: HEventQueue.dispatchEvent() is taking  3097 ms.
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 31, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// by (cl):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:13:31     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B04B86A 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  7144 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,238 MB. GUI used memory: 105 MB. Current time: 6/4/22, 8:14:54 PM CEST
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 3453.211 ; gain = 552.246 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// [Engine Memory]: 3,238 MB (+742860kb) [02:56:25]
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// Elapsed time: 15 seconds
+dismissDialog("Auto Connect"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.ltx} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  7957 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s). 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,279 MB. GUI used memory: 119 MB. Current time: 6/4/22, 8:15:15 PM CEST
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: refresh_hw_device: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 3455.922 ; gain = 0.000 
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"hdmi_inout_bd_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// HMemoryUtils.trashcanNow. Engine heap size: 3,286 MB. GUI used memory: 120 MB. Current time: 6/4/22, 8:15:18 PM CEST
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"hdmi_inout_bd_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// 'I' command handler elapsed time: 22 seconds
+// Elapsed time: 17 seconds
+dismissDialog("Program Device"); // by (cl)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 65 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cl): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// by (cl):  Close Hardware Manager : addNotify
+// Tcl Message: save_wave_config {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg} 
+// Tcl Message: save_wave_config {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg} 
+// TclEventType: WAVEFORM_MODEL_EVENT
+dismissDialog("Confirm Close"); // A (cl)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// Tcl Message: close_hw 
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // i
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_SESSION_CLOSE
+// TclEventType: RSB_CANVAS_LOCATION
+dismissDialog("Close Hardware Manager"); // by (cl)
+// Elapsed time: 44 seconds
+floatFrame(PAResourceOtoP.PAViews_SYSTEM, "Diagram"); // az (aK, cl)
+// PAResourceOtoP.PAViews_SYSTEM: System: float view
+// TclEventType: RSB_CANVAS_LOCATION
+maximizeFrame(PAResourceOtoP.PAViews_SYSTEM, "Diagram"); // az (aK, aM)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: delete_bd_objs [get_bd_intf_nets dvi2rgb_0_RGB] 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// TclEventType: RSB_CANVAS_LOCATION
+// r (aM): Re-customize IP: addNotify
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 119 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (aM)
+// Tcl Command: 'set_property -dict [list CONFIG.kEnableSerialClkOutput {true}] [get_bd_cells dvi2rgb_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// r (aM): Re-customize IP: addNotify
+// by (r):  Customize IP : addNotify
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.kEnableSerialClkOutput {true}] [get_bd_cells dvi2rgb_0] 
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: endgroup 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+dismissDialog("Customize IP"); // by (r)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// TclEventType: RSB_CANVAS_LOCATION
+// r (aM): Re-customize IP: addNotify
+// TclEventType: RSB_CANVAS_LOCATION
+selectCheckBox((HResource) null, "Generate SerialClk internally from pixel clock.", false); // g (o, r): FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (aM)
+// Tcl Command: 'set_property -dict [list CONFIG.kGenerateSerialClk {false}] [get_bd_cells rgb2dvi_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// r (aM): Re-customize IP: addNotify
+// by (r):  Customize IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.kGenerateSerialClk {false}] [get_bd_cells rgb2dvi_0] 
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: endgroup 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+dismissDialog("Customize IP"); // by (r)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins dvi2rgb_0/RGB] [get_bd_intf_pins rgb2dvi_0/RGB] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins dvi2rgb_0/SerialClk] [get_bd_pins rgb2dvi_0/SerialClk] 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd>  Wrote  : <D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ui/bd_5df05ddf.ui>  
+dockFrame(PAResourceOtoP.PAViews_SYSTEM, "Diagram"); // az (aK, aM)
+maximizeFrame(PAResourceOtoP.PAViews_SYSTEM, "Diagram"); // az (aK, aM)
+// PAResourceOtoP.PAViews_SYSTEM: System: dock view
+dismissDialog("Re-customize IP"); // r (aM)
+dismissDialog("Re-customize IP"); // r (aM)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_inout_bd_wrapper (hdmi_inout_bd_wrapper.v), hdmi_inout_bd_i : hdmi_inout_bd (hdmi_inout_bd.bd)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ah (an, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a (cl): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Create HDL Wrapper"); // a (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// by (cl):  Create HDL Wrapper : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top 
+// Tcl Message: Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd>  VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// a (cl): Critical Messages: addNotify
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Create HDL Wrapper"); // by (cl)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,328 MB. GUI used memory: 111 MB. Current time: 6/4/22, 8:19:37 PM CEST
+dismissDialog("Critical Messages"); // a (cl)
+unMinimizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // az (aK)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g (aR, cl): FALSE
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g (aR, cl): FALSE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,385 MB. GUI used memory: 109 MB. Current time: 6/4/22, 8:20:37 PM CEST
+// Elapsed time: 67 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cl)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "proces"); // OverlayTextField (aF, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Processor System Reset", 1, "Processor System Reset", 0, false); // L (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Processor System Reset", 1); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Processor System Reset", 1, "Processor System Reset", 0, false, false, false, false, false, true); // L (O, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// by (cl):  Add IP : addNotify
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0 
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // by (cl)
+// Tcl Command: 'set_property location {1 113 -30} [get_bd_cells proc_sys_reset_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 113 -30} [get_bd_cells proc_sys_reset_0] 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// O (cl):  Re-customize IP : addNotify
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// r (cl): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1126 ms.
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// Elapsed time: 14 seconds
+dismissDialog("Re-customize IP"); // O (cl)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 2); // cT (E, r)
+selectCheckBox((HResource) null, "clk_out2", true); // g (bL, r): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT2 REQUESTED OUT FREQ", "50"); // z (cU, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+dismissDialog("Re-customize IP"); // r (cl)
+// Tcl Command: 'set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {8.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} CONFIG.MMCM_CLKOUT1_DIVIDE {20} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {109.241} CONFIG.CLKOUT1_PHASE_ERROR {96.948} CONFIG.CLKOUT2_JITTER {143.688} CONFIG.CLKOUT2_PHASE_ERROR {96.948}] [get_bd_cells clk_wiz_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: FILE_SET_CHANGE
+// r (cl): Re-customize IP: addNotify
+// by (r):  Customize IP : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {8.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} CONFIG.MMCM_CLKOUT1_DIVIDE {20} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {109.241} CONFIG.CLKOUT1_PHASE_ERROR {96.948} CONFIG.CLKOUT2_JITTER {143.688} CONFIG.CLKOUT2_PHASE_ERROR {96.948}] [get_bd_cells clk_wiz_0] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// Tcl Message: endgroup 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+dismissDialog("Customize IP"); // by (r)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports reset_rtl] [get_bd_pins proc_sys_reset_0/ext_reset_in] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets reset_rtl_1] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports reset_rtl] [get_bd_pins proc_sys_reset_0/ext_reset_in] 
+// Elapsed time: 25 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "System_zoom_fit"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/reset] 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// r (cl): Re-customize IP: addNotify
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// Elapsed time: 14 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+dismissDialog("Re-customize IP"); // r (cl)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// Tcl Message: delete_bd_objs [get_bd_nets dvi2rgb_0_SerialClk] 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// r (cl): Re-customize IP: addNotify
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+selectCheckBox((HResource) null, "Generate SerialClk internally from pixel clock.", true); // g (o, r): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+dismissDialog("Re-customize IP"); // r (cl)
+// Tcl Command: 'set_property -dict [list CONFIG.kGenerateSerialClk {true}] [get_bd_cells rgb2dvi_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// r (cl): Re-customize IP: addNotify
+// by (r):  Customize IP : addNotify
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.kGenerateSerialClk {true}] [get_bd_cells rgb2dvi_0] 
+// Tcl Message: endgroup 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+dismissDialog("Customize IP"); // by (r)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: delete_bd_objs [get_bd_nets clk_wiz_0_clk_out2] [get_bd_cells proc_sys_reset_0] 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd>  Wrote  : <D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ui/bd_5df05ddf.ui>  
+// Elapsed time: 375 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run hdmi_inout_bd_dvi2rgb_0_2_synth_1 
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd>  VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 . 
+// Tcl Message: ERROR: [IP_Flow 19-98] Generation of the IP CORE failed. ERROR: [BD 41-1030] Generation failed for the IP Integrator block dvi2rgb_0  
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 . 
+// Tcl Message: Exporting to file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd.hwh Generated Block Design Tcl file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd_bd.tcl Generated Hardware Definition File D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.hwdef 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.  
+// aY (cl): Launch Run Critical Messages: addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a (aY)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Launch Run Critical Messages"); // aY (cl)
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // B (f, cl)
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// TclEventType: RSB_CANVAS_LOCATION
+// O (cl):  Re-customize IP : addNotify
+// r (cl): Re-customize IP: addNotify
+// TclEventType: RSB_CANVAS_LOCATION
+dismissDialog("Re-customize IP"); // O (cl)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 2); // cT (E, r)
+selectCheckBox((HResource) null, "clk_out2", false); // g (bL, r): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: RSB_CANVAS_LOCATION
+dismissDialog("Re-customize IP"); // r (cl)
+// Tcl Command: 'set_property -dict [list CONFIG.CLKOUT2_USED {false} CONFIG.MMCM_CLKOUT1_DIVIDE {1} CONFIG.NUM_OUT_CLKS {1}] [get_bd_cells clk_wiz_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: FILE_SET_CHANGE
+// r (cl): Re-customize IP: addNotify
+// by (r):  Customize IP : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.CLKOUT2_USED {false} CONFIG.MMCM_CLKOUT1_DIVIDE {1} CONFIG.NUM_OUT_CLKS {1}] [get_bd_cells clk_wiz_0] 
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: endgroup 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+dismissDialog("Customize IP"); // by (r)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_inout_bd_wrapper (hdmi_inout_bd_wrapper.v), hdmi_inout_bd_i : hdmi_inout_bd (hdmi_inout_bd.bd)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a (cl): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Create HDL Wrapper"); // a (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 3,422 MB (+23092kb) [03:10:36]
+// TclEventType: FILE_SET_CHANGE
+// by (cl):  Create HDL Wrapper : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top 
+// Tcl Message: Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd>  Wrote  : <D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ui/bd_5df05ddf.ui>  VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,425 MB. GUI used memory: 129 MB. Current time: 6/4/22, 8:29:07 PM CEST
+// a (cl): Critical Messages: addNotify
+dismissDialog("Create HDL Wrapper"); // by (cl)
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// f (cl): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (cl)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [BD 41-1662] The design 'hdmi_inout_bd.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 . 
+// Tcl Message: ERROR: [IP_Flow 19-98] Generation of the IP CORE failed. ERROR: [BD 41-1030] Generation failed for the IP Integrator block dvi2rgb_0  
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 . 
+// Tcl Message: Exporting to file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd.hwh Generated Block Design Tcl file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd_bd.tcl Generated Hardware Definition File D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.hwdef 
+// Tcl Message: ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.  
+// aY (cl): Launch Run Critical Messages: addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (aY)
+dismissDialog("Launch Run Critical Messages"); // aY (cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, hdmi_inout_bd, General Messages, [BD 41-1030] Generation failed for the IP Integrator block dvi2rgb_0 . ]", 5, false); // ah (O, cl)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "bd_cell;-;/dvi2rgb_0;-;hdmi_inout_bd;-;4;-;"); // ah (O, cl)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// TclEventType: RSB_CANVAS_LOCATION
+// r (cl): Re-customize IP: addNotify
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports sys_clock] [get_bd_pins dvi2rgb_0/aRst] 
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_inout_bd_wrapper (hdmi_inout_bd_wrapper.v), hdmi_inout_bd_i : hdmi_inout_bd (hdmi_inout_bd.bd)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a (cl): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Create HDL Wrapper"); // a (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// by (cl):  Create HDL Wrapper : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top 
+// Tcl Message: Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd>  Wrote  : <D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ui/bd_5df05ddf.ui>  VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v 
+// a (cl): Critical Messages: addNotify
+dismissDialog("Create HDL Wrapper"); // by (cl)
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,496 MB. GUI used memory: 141 MB. Current time: 6/4/22, 8:29:56 PM CEST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// f (cl): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (cl)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [BD 41-1662] The design 'hdmi_inout_bd.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 . 
+// Tcl Message: ERROR: [IP_Flow 19-98] Generation of the IP CORE failed. ERROR: [BD 41-1030] Generation failed for the IP Integrator block dvi2rgb_0  
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 . 
+// Tcl Message: Exporting to file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd.hwh Generated Block Design Tcl file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd_bd.tcl Generated Hardware Definition File D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.hwdef 
+// Tcl Message: ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.  
+// aY (cl): Launch Run Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (aY)
+dismissDialog("Launch Run Critical Messages"); // aY (cl)
+// TclEventType: FILE_SET_CHANGE
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// f (cl): Confirm Delete: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Confirm Delete"); // f (cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: delete_bd_objs [get_bd_nets sys_clock_1] 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets sys_clock_1]' 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: delete_bd_objs [get_bd_nets sys_clock_1] 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports sys_clock] [get_bd_pins clk_wiz_0/clk_in1] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports reset_rtl] [get_bd_pins dvi2rgb_0/aRst] 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd>  Wrote  : <D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ui/bd_5df05ddf.ui>  
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_inout_bd_wrapper (hdmi_inout_bd_wrapper.v), hdmi_inout_bd_i : hdmi_inout_bd (hdmi_inout_bd.bd)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a (cl): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Create HDL Wrapper"); // a (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// by (cl):  Create HDL Wrapper : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top 
+// Tcl Message: Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd>  VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v 
+// a (cl): Critical Messages: addNotify
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Create HDL Wrapper"); // by (cl)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,569 MB. GUI used memory: 131 MB. Current time: 6/4/22, 8:30:37 PM CEST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// f (cl): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (cl)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 3,605 MB (+12108kb) [03:12:13]
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [BD 41-1662] The design 'hdmi_inout_bd.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 . 
+// Tcl Message: ERROR: [IP_Flow 19-98] Generation of the IP CORE failed. ERROR: [BD 41-1030] Generation failed for the IP Integrator block dvi2rgb_0  
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 . 
+// Tcl Message: Exporting to file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd.hwh Generated Block Design Tcl file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd_bd.tcl Generated Hardware Definition File D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.hwdef 
+// Tcl Message: ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.  
+// aY (cl): Launch Run Critical Messages: addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (aY)
+dismissDialog("Launch Run Critical Messages"); // aY (cl)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// r (cl): Re-customize IP: addNotify
+// TclEventType: RSB_CANVAS_LOCATION
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// Tcl Command: 'set_property -dict [list CONFIG.kDebug {true}] [get_bd_cells dvi2rgb_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.kDebug {true}] [get_bd_cells dvi2rgb_0] 
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: endgroup 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, hdmi_inout_bd, General Messages, [IP_Flow 19-193] Failed to save BOM file 'd:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_dvi2rgb_0_2/src/ila_refclk/ila_refclk.xml'.. ]", 2); // ah (O, cl)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, hdmi_inout_bd, General Messages, [IP_Flow 19-193] Failed to save BOM file 'd:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ip/hdmi_inout_bd_dvi2rgb_0_2/src/ila_refclk/ila_refclk.xml'.. ]", 2); // ah (O, cl)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, hdmi_inout_bd, General Messages, [IP_Flow 19-98] Generation of the IP CORE failed.. ]", 4); // ah (O, cl)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, hdmi_inout_bd, General Messages, [IP_Flow 19-98] Generation of the IP CORE failed.. ]", 4); // ah (O, cl)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, hdmi_inout_bd, General Messages, [BD 41-1030] Generation failed for the IP Integrator block dvi2rgb_0 . ]", 5); // ah (O, cl)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, hdmi_inout_bd, General Messages, [BD 41-1030] Generation failed for the IP Integrator block dvi2rgb_0 . ]", 5); // ah (O, cl)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, hdmi_inout_bd, General Messages, [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.. ]", 6); // ah (O, cl)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, hdmi_inout_bd, General Messages, [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.. ]", 6); // ah (O, cl)
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets hdmi_rx_1] [get_bd_intf_nets dvi2rgb_0_RGB] [get_bd_nets clk_wiz_0_clk_out1] [get_bd_nets dvi2rgb_0_PixelClk] [get_bd_intf_nets dvi2rgb_0_DDC] [get_bd_cells dvi2rgb_0] 
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cl)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "dvi"); // OverlayTextField (aF, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "DVI to RGB Video Decoder (Sink)", 0, "DVI to RGB Video Decoder (Sink)", 0, false); // L (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "DVI to RGB Video Decoder (Sink)", 0); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "DVI to RGB Video Decoder (Sink)", 0, "DVI to RGB Video Decoder (Sink)", 0, false, false, false, false, false, true); // L (O, ResizableWindow) - Double Click
+// by (cl):  Add IP : addNotify
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv digilentinc.com:ip:dvi2rgb:2.0 dvi2rgb_0 
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // by (cl)
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins dvi2rgb_0/RefClk] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_ports hdmi_rx] [get_bd_intf_pins dvi2rgb_0/TMDS] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins dvi2rgb_0/RGB] [get_bd_intf_pins rgb2dvi_0/RGB] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_ports hdmi_in_ddc] [get_bd_intf_pins dvi2rgb_0/DDC] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins dvi2rgb_0/PixelClk] [get_bd_pins rgb2dvi_0/PixelClk] 
+// Elapsed time: 13 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_inout_bd_wrapper (hdmi_inout_bd_wrapper.v), hdmi_inout_bd_i : hdmi_inout_bd (hdmi_inout_bd.bd)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a (cl): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Create HDL Wrapper"); // a (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// by (cl):  Create HDL Wrapper : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,642 MB. GUI used memory: 132 MB. Current time: 6/4/22, 8:31:52 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top 
+// Tcl Message: Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd>  Wrote  : <D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/ui/bd_5df05ddf.ui>  VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Create HDL Wrapper"); // by (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// f (cl): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (cl)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cx' command handler elapsed time: 3 seconds
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [BD 41-1662] The design 'hdmi_inout_bd.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 . 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block dvi2rgb_0 . 
+// Tcl Message: Exporting to file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd.hwh Generated Block Design Tcl file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd_bd.tcl Generated Hardware Definition File D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.hwdef 
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3888.621 ; gain = 54.047 
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// TclEventType: RSB_CANVAS_LOCATION
+// r (cl): Re-customize IP: addNotify
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// TclEventType: RSB_CANVAS_LOCATION
+// r (cl): Re-customize IP: addNotify
+// TclEventType: RSB_CANVAS_LOCATION
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cl)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// TclEventType: RSB_CANVAS_LOCATION
+dismissDialog("Re-customize IP"); // r (cl)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// TclEventType: RSB_CANVAS_LOCATION
+// r (cl): Re-customize IP: addNotify
+// TclEventType: RSB_CANVAS_LOCATION
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// TclEventType: RSB_CANVAS_LOCATION
+// r (cl): Re-customize IP: addNotify
+// TclEventType: RSB_CANVAS_LOCATION
+dismissDialog("Re-customize IP"); // r (cl)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cl)
+// by (cl):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "Cancel Process"); // JButton (A, G)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run hdmi_inout_bd_clk_wiz_0_0_synth_1 
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run hdmi_inout_bd_dvi2rgb_0_3_synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RSB_CANVAS_LOCATION
+dismissDialog("Resetting Runs"); // by (cl)
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// TclEventType: RSB_CANVAS_LOCATION
+// r (cl): Re-customize IP: addNotify
+// TclEventType: RSB_CANVAS_LOCATION
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// Tcl Command: 'set_property -dict [list CONFIG.kEdidFileName {dgl_1080p_cea.data}] [get_bd_cells dvi2rgb_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.kEdidFileName {dgl_1080p_cea.data}] [get_bd_cells dvi2rgb_0] 
+// Tcl Message: endgroup 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_inout_bd_wrapper (hdmi_inout_bd_wrapper.v), hdmi_inout_bd_i : hdmi_inout_bd (hdmi_inout_bd.bd)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a (cl): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Create HDL Wrapper"); // a (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// by (cl):  Create HDL Wrapper : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top 
+// Tcl Message: Wrote  : <D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.srcs\sources_1\bd\hdmi_inout_bd\hdmi_inout_bd.bd>  VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v 
+dismissDialog("Create HDL Wrapper"); // by (cl)
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // B (f, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): No Implementation Results Available: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 3,707 MB. GUI used memory: 138 MB. Current time: 6/4/22, 8:33:07 PM CEST
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// f (cl): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (cl)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// by (cl):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [BD 41-1662] The design 'hdmi_inout_bd.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/sim/hdmi_inout_bd.v VHDL Output written to : D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdl/hdmi_inout_bd_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block dvi2rgb_0 . 
+// Tcl Message: Exporting to file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd.hwh Generated Block Design Tcl file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hw_handoff/hdmi_inout_bd_bd.tcl Generated Hardware Definition File D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/synth/hdmi_inout_bd.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP hdmi_inout_bd_dvi2rgb_0_3, cache-ID = 38c4a0dc87862f14; cache size = 34.094 MB. 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Jun  4 20:33:16 2022] Launched hdmi_inout_bd_clk_wiz_0_0_synth_1, synth_1... Run output will be captured here: hdmi_inout_bd_clk_wiz_0_0_synth_1: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/hdmi_inout_bd_clk_wiz_0_0_synth_1/runme.log synth_1: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/synth_1/runme.log [Sat Jun  4 20:33:16 2022] Launched impl_1... Run output will be captured here: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 3966.199 ; gain = 58.887 
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 278 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// by (cl):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:13:31     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B04B86A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  2902 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"hdmi_inout_bd_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"hdmi_inout_bd_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}]] 
+dismissDialog("Auto Connect"); // by (cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// WARNING: HEventQueue.dispatchEvent() is taking  1399 ms.
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// WARNING: HEventQueue.dispatchEvent() is taking  1074 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,763 MB. GUI used memory: 157 MB. Current time: 6/4/22, 8:38:15 PM CEST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// WARNING: HEventQueue.dispatchEvent() is taking  2542 ms.
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cl)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.ltx} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,763 MB. GUI used memory: 156 MB. Current time: 6/4/22, 8:38:50 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1027 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 227 MB (+1887kb) [03:20:24]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,763 MB. GUI used memory: 177 MB. Current time: 6/4/22, 8:38:55 PM CEST
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// WARNING: HEventQueue.dispatchEvent() is taking  3477 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// WARNING: HEventQueue.dispatchEvent() is taking  1113 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: refresh_hw_device: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 3966.199 ; gain = 0.000 
+// 'I' command handler elapsed time: 15 seconds
+// Elapsed time: 13 seconds
+dismissDialog("Program Device"); // by (cl)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_ila_2", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_ila_1", 0); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_ila_2", 1); // k (j, cl)
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"hdmi_inout_bd_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2022-Jun-04 20:39:32 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"hdmi_inout_bd_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"hdmi_inout_bd_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2022-Jun-04 20:39:32 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,763 MB. GUI used memory: 157 MB. Current time: 6/4/22, 8:39:33 PM CEST
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+maximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_2"); // Z (ar, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,763 MB. GUI used memory: 158 MB. Current time: 6/4/22, 8:39:37 PM CEST
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// Elapsed time: 10 seconds
+unMaximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_2"); // Z (ar, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 3,763 MB. GUI used memory: 158 MB. Current time: 6/4/22, 8:39:52 PM CEST
+maximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_2"); // Z (ar, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+floatFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // az (aK, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_2: float view
+// HMemoryUtils.trashcanNow. Engine heap size: 3,763 MB. GUI used memory: 158 MB. Current time: 6/4/22, 8:39:54 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // az (aK, aM)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, aM)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,763 MB. GUI used memory: 161 MB. Current time: 6/4/22, 8:40:03 PM CEST
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, aM)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, hdmi_inout_bd_i/dvi2rgb_0/U0/dbg_rBUFR_Rst]", 3, false); // a (r, aM)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, hdmi_inout_bd_i/dvi2rgb_0/U0/dbg_rRdyRst]", 1, false); // a (r, aM)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, hdmi_inout_bd_i/dvi2rgb_0/U0/dbg_rDlyRst]", 0, false); // a (r, aM)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,763 MB. GUI used memory: 169 MB. Current time: 6/4/22, 8:40:09 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -9, 12); // n (o, aM)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, hdmi_inout_bd_i/dvi2rgb_0/U0/dbg_rRdyRst]", 1, false); // a (r, aM)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Elapsed time: 11 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -9, 12); // n (o, aM)Waveform: addNotify
+closeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_2"); // Z (ar, aM)
+// Tcl Message: save_wave_config {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg} 
+// A (cl): Delete Dashboard: addNotify
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_2: close view
+closeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // az (aK, aM)
+dockFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // az (aK, aM)
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // az (aK, aM)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // i
+dismissDialog("Delete Dashboard"); // A (cl)
+// A (cl): Delete Dashboard: addNotify
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_1: close view
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+dismissDialog("Delete Dashboard"); // A (cl)

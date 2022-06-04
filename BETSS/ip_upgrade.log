@@ -1,0 +1,16 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sat Jun  4 20:43:56 2022
+| Host         : kacper running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'hdmi_inout_bd_dvi2rgb_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of hdmi_inout_bd_dvi2rgb_0_3 (digilentinc.com:ip:dvi2rgb:2.0 (Rev. 4)) to Vivado generation flows.
+

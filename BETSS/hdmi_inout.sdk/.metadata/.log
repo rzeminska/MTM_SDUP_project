@@ -1,0 +1,147 @@
+!SESSION 2022-05-30 18:45:43.812 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk
+
+!ENTRY org.eclipse.ui 2 0 2022-05-30 18:45:55.959
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-05-30 18:45:55.959
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2022-05-30 18:45:56.549
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-05-30 18:45:56.549
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:46:06.424
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:46:06.425
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:46:08.752
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:46:08.753
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:46:08.753
+!MESSAGE XSCT Command: [setws D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk], Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:46:08.756
+!MESSAGE XSCT command with result: [setws D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk], Result: [null, ]. Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:46:08.822
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk/hdmi_inout_bd_wrapper_hw_platform_0/system.hdf], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:46:11.834
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk/hdmi_inout_bd_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:46:11.849
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk/hdmi_inout_bd_wrapper_hw_platform_0/system.hdf], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:46:11.852
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk/hdmi_inout_bd_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Mon May 30 18:34:06 2022",
+"vivado_version": "2019.1",
+"part": "xc7z020clg400-1",
+}]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:46:11.855
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk/hdmi_inout_bd_wrapper_hw_platform_0/system.hdf], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:46:11.859
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk/hdmi_inout_bd_wrapper_hw_platform_0/system.hdf], Result: [null, {"clk_wiz_0": {"hier_name": "clk_wiz_0",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"dvi2rgb_0": {"hier_name": "dvi2rgb_0",
+"type": "dvi2rgb",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"rgb2dvi_0": {"hier_name": "rgb2dvi_0",
+"type": "rgb2dvi",
+"version": "1.4",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_0": {"hier_name": "xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-3
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-05-30 18:46:55.244
+!MESSAGE Indexed 'test' (0 sources, 0 headers) in 0,002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-30 18:47:13.229
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:38.600
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk/hdmi_inout_bd_wrapper_hw_platform_0/system.hdf bit], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:38.602
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk/hdmi_inout_bd_wrapper_hw_platform_0/system.hdf bit], Result: [null, hdmi_inout_bd_wrapper.bit]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:38.603
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk/hdmi_inout_bd_wrapper_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:38.615
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk/hdmi_inout_bd_wrapper_hw_platform_0/system.hdf ], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:41.995
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk/hdmi_inout_bd_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:41.998
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk/hdmi_inout_bd_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:44.679
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:47.292
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:47.296
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:47.704
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B04B86A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:47.707
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:47.715
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B04B86A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:47.715
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B04B86A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:47.733
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B04B86A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:47.735
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B04B86A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:47.759
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B04B86A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:47.768
+!MESSAGE XSCT Command: [fpga -file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk/hdmi_inout_bd_wrapper_hw_platform_0/hdmi_inout_bd_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:50.122
+!MESSAGE XSCT command with result: [fpga -file D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk/hdmi_inout_bd_wrapper_hw_platform_0/hdmi_inout_bd_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:50.928
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk/hdmi_inout_bd_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-30 18:47:50.930
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.sdk/hdmi_inout_bd_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-30 18:48:35.766
+!MESSAGE Executed Webtalk command

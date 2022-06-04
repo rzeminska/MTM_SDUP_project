@@ -1,0 +1,557 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jun  2 23:01:54 2022
+# Process ID: 8312
+# Current directory: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24572 D:\SDUP_proj\hdmi_inout_kopiaZapasowa\hdmi_inout_kopiaZapasowa\hdmi_inout.xpr
+# Log file: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/vivado.log
+# Journal file: D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd}
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_nets dvi2rgb_0_PixelClk]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_1
+endgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {148.5} CONFIG.USE_RESET {false} CONFIG.MMCM_DIVCLK_DIVIDE {4} CONFIG.MMCM_CLKFBOUT_MULT_F {37.125} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.250} CONFIG.CLKOUT1_JITTER {217.614} CONFIG.CLKOUT1_PHASE_ERROR {245.344}] [get_bd_cells clk_wiz_1]
+set_property -dict [list CONFIG.USE_LOCKED {false}] [get_bd_cells clk_wiz_1]
+connect_bd_net [get_bd_ports sys_clock] [get_bd_pins clk_wiz_1/clk_in1]
+connect_bd_net [get_bd_pins clk_wiz_1/clk_out1] [get_bd_pins rgb2gray_0/pixelClk]
+regenerate_bd_layout
+regenerate_bd_layout
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+set_property LOCK_UPGRADE 1 [get_bd_cells /rgb2dvi_1]
+upgrade_ip -vlnv digilentinc.com:ip:dvi2rgb:2.0 [get_ips  hdmi_inout_bd_dvi2rgb_0_1] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips hdmi_inout_bd_dvi2rgb_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd]
+catch { config_ip_cache -export [get_ips -all hdmi_inout_bd_dvi2rgb_0_1] }
+catch { config_ip_cache -export [get_ips -all hdmi_inout_bd_clk_wiz_1_0] }
+export_ip_user_files -of_objects [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd]
+launch_runs -jobs 4 hdmi_inout_bd_clk_wiz_1_0_synth_1
+export_simulation -of_objects [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -directory D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.ip_user_files/sim_scripts -ip_user_files_dir D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.ip_user_files -ipstatic_source_dir D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.cache/compile_simlib/modelsim} {questa=D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.cache/compile_simlib/questa} {riviera=D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.cache/compile_simlib/riviera} {activehdl=D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+delete_bd_objs [get_bd_nets clk_wiz_1_clk_out1] [get_bd_cells clk_wiz_1]
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {148.5} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {42.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.250} CONFIG.MMCM_CLKOUT1_DIVIDE {7} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {185.342} CONFIG.CLKOUT1_PHASE_ERROR {233.292} CONFIG.CLKOUT2_JITTER {193.443} CONFIG.CLKOUT2_PHASE_ERROR {233.292}] [get_bd_cells clk_wiz_0]
+endgroup
+connect_bd_net [get_bd_pins rgb2gray_0/pixelClk] [get_bd_pins dvi2rgb_0/vid_pVDE]
+undo
+connect_bd_net [get_bd_pins rgb2gray_0/pixelClk] [get_bd_pins clk_wiz_0/clk_out2]
+save_bd_design
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/kacpe/OneDrive/Pulpit/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+delete_bd_objs [get_bd_intf_nets rgb2dvi_1_TMDS] [get_bd_cells rgb2dvi_1]
+set_property location {4.5 1020 189} [get_bd_cells rgb2dvi_0]
+save_bd_design
+undo
+connect_bd_intf_net [get_bd_intf_ports hdmi_tx] [get_bd_intf_pins rgb2dvi_0/TMDS]
+save_bd_design
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+startgroup
+set_property -dict [list CONFIG.kGenerateSerialClk {false}] [get_bd_cells rgb2dvi_0]
+endgroup
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+connect_bd_net [get_bd_pins rgb2dvi_0/SerialClk] [get_bd_pins clk_wiz_0/clk_out2]
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+update_module_reference hdmi_inout_bd_rgb2gray_0_0
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out2]
+connect_bd_net [get_bd_pins rgb2gray_0/pixelClk] [get_bd_pins clk_wiz_0/clk_out2]
+undo
+connect_bd_net [get_bd_pins rgb2gray_0/pixelClk] [get_bd_pins clk_wiz_0/clk_out2]
+connect_bd_net [get_bd_pins dvi2rgb_0/TMDS_Data_n] [get_bd_pins dvi2rgb_0/TMDS_Data_p]
+connect_bd_net [get_bd_pins dvi2rgb_0/TMDS_Data_p] [get_bd_pins dvi2rgb_0/TMDS_Clk_n]
+undo
+undo
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins dvi2rgb_0/TMDS_Clk_n]
+set_property location {4 800 223} [get_bd_cells rgb2dvi_0]
+connect_bd_net [get_bd_pins rgb2dvi_0/SerialClk] [get_bd_pins clk_wiz_0/clk_out1]
+save_bd_design
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins dvi2rgb_0/TMDS_Data_n]
+undo
+connect_bd_net [get_bd_pins dvi2rgb_0/RefClk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins rgb2dvi_0/SerialClk]
+save_bd_design
+undo
+undo
+undo
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]
+set_property location {2 150 386} [get_bd_cells rgb2gray_0]
+undo
+connect_bd_net [get_bd_pins rgb2dvi_0/SerialClk] [get_bd_pins clk_wiz_0/clk_out1]
+set_property location {2 168 480} [get_bd_cells dvi2rgb_0]
+connect_bd_net [get_bd_pins dvi2rgb_0/RefClk] [get_bd_pins dvi2rgb_0/pRst]
+undo
+connect_bd_net [get_bd_pins dvi2rgb_0/RefClk] [get_bd_pins dvi2rgb_0/pRst]
+undo
+connect_bd_net [get_bd_pins dvi2rgb_0/RefClk] [get_bd_pins dvi2rgb_0/pRst]
+undo
+connect_bd_net [get_bd_pins dvi2rgb_0/RefClk] [get_bd_pins clk_wiz_0/clk_out1]
+startgroup
+endgroup
+startgroup
+set_property -dict [list CONFIG.kAddBUFG {false}] [get_bd_cells dvi2rgb_0]
+endgroup
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_USED {true} CONFIG.CLKOUT2_USED {false} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {8.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} CONFIG.MMCM_CLKOUT1_DIVIDE {1} CONFIG.NUM_OUT_CLKS {1} CONFIG.CLKOUT1_JITTER {109.241} CONFIG.CLKOUT1_PHASE_ERROR {96.948}] [get_bd_cells clk_wiz_0]
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out2]
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins dvi2rgb_0/pRst]
+undo
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins dvi2rgb_0/RefClk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins rgb2gray_0/pixelClk]
+connect_bd_net [get_bd_pins rgb2dvi_0/SerialClk] [get_bd_pins clk_wiz_0/clk_out1]
+save_bd_design
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+reset_run hdmi_inout_bd_clk_wiz_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_USED {true} CONFIG.CLKOUT2_USED {false} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {148.5} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {200} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {37.125} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.250} CONFIG.MMCM_CLKOUT1_DIVIDE {1} CONFIG.NUM_OUT_CLKS {1} CONFIG.CLKOUT1_JITTER {216.859} CONFIG.CLKOUT1_PHASE_ERROR {245.344} CONFIG.CLKOUT2_JITTER {99.239} CONFIG.CLKOUT2_PHASE_ERROR {86.070}] [get_bd_cells clk_wiz_0]
+endgroup
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+startgroup
+endgroup
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins dvi2rgb_0/RefClk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins rgb2dvi_0/SerialClk]
+connect_bd_net [get_bd_pins rgb2gray_0/pixelClk] [get_bd_pins dvi2rgb_0/PixelClk]
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {200} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {8.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} CONFIG.CLKOUT1_JITTER {109.241} CONFIG.CLKOUT1_PHASE_ERROR {96.948}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+open_bd_design {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd}
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+reset_run hdmi_inout_bd_clk_wiz_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+startgroup
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {42.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.250} CONFIG.MMCM_CLKOUT1_DIVIDE {7} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {185.342} CONFIG.CLKOUT1_PHASE_ERROR {233.292} CONFIG.CLKOUT2_JITTER {193.443} CONFIG.CLKOUT2_PHASE_ERROR {233.292}] [get_bd_cells clk_wiz_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_USED {false} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {8.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} CONFIG.MMCM_CLKOUT1_DIVIDE {1} CONFIG.NUM_OUT_CLKS {1} CONFIG.CLKOUT1_JITTER {109.241} CONFIG.CLKOUT1_PHASE_ERROR {96.948}] [get_bd_cells clk_wiz_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.kAddBUFG {true}] [get_bd_cells dvi2rgb_0]
+endgroup
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+reset_run hdmi_inout_bd_clk_wiz_0_0_synth_1
+reset_run hdmi_inout_bd_dvi2rgb_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+startgroup
+set_property -dict [list CONFIG.kEnableSerialClkOutput {true}] [get_bd_cells dvi2rgb_0]
+endgroup
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]
+connect_bd_net [get_bd_pins dvi2rgb_0/SerialClk] [get_bd_pins rgb2dvi_0/SerialClk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins dvi2rgb_0/RefClk]
+save_bd_design
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+reset_run hdmi_inout_bd_dvi2rgb_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+delete_bd_objs [get_bd_nets dvi2rgb_0_PixelClk] [get_bd_nets dvi2rgb_0_vid_pData] [get_bd_nets dvi2rgb_0_vid_pHSync] [get_bd_nets dvi2rgb_0_vid_pVSync] [get_bd_nets dvi2rgb_0_vid_pVDE] [get_bd_nets rgb2gray_0_pData_out] [get_bd_nets rgb2gray_0_VDE_out] [get_bd_nets rgb2gray_0_pixelClk_out] [get_bd_nets rgb2gray_0_hSync_out] [get_bd_nets rgb2gray_0_vsync_out] [get_bd_cells rgb2gray_0]
+connect_bd_intf_net [get_bd_intf_pins dvi2rgb_0/RGB] [get_bd_intf_pins rgb2dvi_0/RGB]
+update_compile_order -fileset sources_1
+connect_bd_net [get_bd_pins dvi2rgb_0/PixelClk] [get_bd_pins rgb2dvi_0/PixelClk]
+save_bd_design
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+startgroup
+set_property -dict [list CONFIG.kGenerateSerialClk {false}] [get_bd_cells rgb2dvi_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.kAddBUFG {false}] [get_bd_cells dvi2rgb_0]
+endgroup
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+reset_run hdmi_inout_bd_dvi2rgb_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+startgroup
+set_property -dict [list CONFIG.kAddBUFG {true}] [get_bd_cells dvi2rgb_0]
+endgroup
+delete_bd_objs [get_bd_nets dvi2rgb_0_PixelClk]
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {42.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.250} CONFIG.MMCM_CLKOUT1_DIVIDE {7} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {185.342} CONFIG.CLKOUT1_PHASE_ERROR {233.292}] [get_bd_cells clk_wiz_0]
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins rgb2dvi_0/PixelClk]
+save_bd_design
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+reset_run hdmi_inout_bd_dvi2rgb_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+delete_bd_objs [get_bd_nets dvi2rgb_0_SerialClk]
+startgroup
+set_property -dict [list CONFIG.kGenerateSerialClk {true}] [get_bd_cells rgb2dvi_0]
+endgroup
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+reset_run hdmi_inout_bd_rgb2dvi_0_2_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+startgroup
+set_property -dict [list CONFIG.kGenerateSerialClk {false}] [get_bd_cells rgb2dvi_0]
+endgroup
+connect_bd_net [get_bd_pins rgb2dvi_0/SerialClk] [get_bd_pins clk_wiz_0/clk_out2]
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out2]
+connect_bd_net [get_bd_pins rgb2dvi_0/PixelClk] [get_bd_pins clk_wiz_0/clk_out2]
+connect_bd_net [get_bd_pins rgb2dvi_0/SerialClk] [get_bd_pins clk_wiz_0/clk_out1]
+save_bd_design
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+reset_run hdmi_inout_bd_rgb2dvi_0_2_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+startgroup
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_USED {false} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {8.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} CONFIG.MMCM_CLKOUT1_DIVIDE {1} CONFIG.NUM_OUT_CLKS {1} CONFIG.CLKOUT1_JITTER {109.241} CONFIG.CLKOUT1_PHASE_ERROR {96.948}] [get_bd_cells clk_wiz_0]
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out2]
+endgroup
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]
+connect_bd_net [get_bd_pins rgb2dvi_0/PixelClk] [get_bd_pins dvi2rgb_0/PixelClk]
+regenerate_bd_layout
+set_property location {2.5 649 312} [get_bd_cells rgb2dvi_0]
+set_property location {3.5 779 329} [get_bd_cells rgb2dvi_0]
+set_property location {0.5 -36 131} [get_bd_cells dvi2rgb_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:v_axi4s_vid_out:4.0 v_axi4s_vid_out_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:v_vid_in_axi4s:4.0 v_vid_in_axi4s_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:v_tc:6.1 v_tc_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.kGenerateSerialClk {true}] [get_bd_cells rgb2dvi_0]
+endgroup
+connect_bd_net [get_bd_pins dvi2rgb_0/RefClk] [get_bd_pins clk_wiz_0/clk_out1]
+startgroup
+endgroup
+delete_bd_objs [get_bd_intf_nets dvi2rgb_0_RGB]
+connect_bd_intf_net [get_bd_intf_pins dvi2rgb_0/RGB] [get_bd_intf_pins v_vid_in_axi4s_0/vid_io_in]
+connect_bd_intf_net [get_bd_intf_pins v_vid_in_axi4s_0/vtiming_out] [get_bd_intf_pins v_tc_0/vtiming_in]
+connect_bd_net [get_bd_pins dvi2rgb_0/PixelClk] [get_bd_pins v_vid_in_axi4s_0/aclk]
+connect_bd_intf_net [get_bd_intf_pins v_vid_in_axi4s_0/video_out] [get_bd_intf_pins v_axi4s_vid_out_0/video_in]
+connect_bd_intf_net [get_bd_intf_pins v_tc_0/vtiming_out] [get_bd_intf_pins v_axi4s_vid_out_0/vtiming_in]
+connect_bd_net [get_bd_pins v_tc_0/gen_clken] [get_bd_pins v_axi4s_vid_out_0/vtg_ce]
+connect_bd_net [get_bd_pins v_axi4s_vid_out_0/aclk] [get_bd_pins dvi2rgb_0/PixelClk]
+regenerate_bd_layout
+connect_bd_intf_net [get_bd_intf_pins v_axi4s_vid_out_0/vid_io_out] [get_bd_intf_pins rgb2dvi_0/RGB]
+connect_bd_net [get_bd_pins v_tc_0/clk] [get_bd_pins dvi2rgb_0/PixelClk]
+regenerate_bd_layout
+save_bd_design
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+delete_bd_objs [get_bd_nets reset_rtl_1]
+set_property location {-36 113} [get_bd_ports reset_rtl]
+connect_bd_net [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/reset]
+save_bd_design
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+delete_bd_objs [get_bd_nets reset_rtl_1] [get_bd_ports reset_rtl]
+startgroup
+set_property -dict [list CONFIG.USE_RESET {false}] [get_bd_cells clk_wiz_0]
+endgroup
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+startgroup
+set_property -dict [list CONFIG.HAS_AXI4_LITE {false}] [get_bd_cells v_tc_0]
+endgroup
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+startgroup
+set_property -dict [list CONFIG.USE_RESET {true}] [get_bd_cells clk_wiz_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {New External Port (ACTIVE_HIGH)}}  [get_bd_pins clk_wiz_0/reset]
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+reset_run hdmi_inout_bd_rgb2dvi_0_2_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+reset_run hdmi_inout_bd_rgb2dvi_0_2_synth_1
+reset_run hdmi_inout_bd_v_tc_0_0_synth_1
+reset_run hdmi_inout_bd_v_vid_in_axi4s_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+startgroup
+set_property -dict [list CONFIG.enable_detection {false}] [get_bd_cells v_tc_0]
+delete_bd_objs [get_bd_intf_nets v_vid_in_axi4s_0_vtiming_out]
+endgroup
+startgroup
+set_property -dict [list CONFIG.kRstActiveHigh {true}] [get_bd_cells rgb2dvi_0]
+endgroup
+connect_bd_net [get_bd_ports reset_rtl] [get_bd_pins dvi2rgb_0/aRst]
+connect_bd_net [get_bd_ports reset_rtl] [get_bd_pins rgb2dvi_0/aRst]
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+reset_run hdmi_inout_bd_rgb2dvi_0_2_synth_1
+reset_run hdmi_inout_bd_v_tc_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+startgroup
+set_property -dict [list CONFIG.enable_detection {true}] [get_bd_cells v_tc_0]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins v_vid_in_axi4s_0/vtiming_out] [get_bd_intf_pins v_tc_0/vtiming_in]
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+startgroup
+endgroup
+startgroup
+endgroup
+reset_run synth_1
+reset_run hdmi_inout_bd_v_tc_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_ds_buf:2.1 util_ds_buf_0
+endgroup
+delete_bd_objs [get_bd_cells util_ds_buf_0]
+startgroup
+endgroup
+startgroup
+set_property -dict [list CONFIG.VIDEO_MODE {1080p} CONFIG.GEN_F0_VSYNC_VSTART {1083} CONFIG.GEN_F1_VSYNC_VSTART {1083} CONFIG.GEN_HACTIVE_SIZE {1920} CONFIG.GEN_HSYNC_END {2052} CONFIG.GEN_HFRAME_SIZE {2200} CONFIG.GEN_F0_VSYNC_HSTART {1920} CONFIG.GEN_F1_VSYNC_HSTART {1920} CONFIG.GEN_F0_VSYNC_HEND {1920} CONFIG.GEN_F1_VSYNC_HEND {1920} CONFIG.GEN_F0_VFRAME_SIZE {1125} CONFIG.GEN_F1_VFRAME_SIZE {1125} CONFIG.GEN_F0_VSYNC_VEND {1088} CONFIG.GEN_F1_VSYNC_VEND {1088} CONFIG.GEN_F0_VBLANK_HEND {1920} CONFIG.GEN_F1_VBLANK_HEND {1920} CONFIG.GEN_HSYNC_START {2008} CONFIG.GEN_VACTIVE_SIZE {1080} CONFIG.GEN_F0_VBLANK_HSTART {1920} CONFIG.GEN_F1_VBLANK_HSTART {1920}] [get_bd_cells v_tc_0]
+endgroup
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+open_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+open_bd_design {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd}
+delete_bd_objs [get_bd_intf_nets v_tc_0_vtiming_out] [get_bd_nets v_axi4s_vid_out_0_vtg_ce] [get_bd_intf_nets v_vid_in_axi4s_0_vtiming_out] [get_bd_cells v_tc_0]
+connect_bd_intf_net [get_bd_intf_pins v_vid_in_axi4s_0/vtiming_out] [get_bd_intf_pins v_axi4s_vid_out_0/vtiming_in]
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+connect_bd_net [get_bd_pins v_axi4s_vid_out_0/fid] [get_bd_pins v_vid_in_axi4s_0/fid]
+save_bd_design
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+delete_bd_objs [get_bd_nets v_vid_in_axi4s_0_fid]
+undo
+delete_bd_objs [get_bd_nets v_vid_in_axi4s_0_fid]
+startgroup
+set_property -dict [list CONFIG.C_HAS_ASYNC_CLK {0}] [get_bd_cells v_axi4s_vid_out_0]
+endgroup
+delete_bd_objs [get_bd_intf_nets dvi2rgb_0_RGB] [get_bd_intf_nets v_vid_in_axi4s_0_video_out] [get_bd_intf_nets v_vid_in_axi4s_0_vtiming_out] [get_bd_cells v_vid_in_axi4s_0]
+delete_bd_objs [get_bd_intf_nets v_axi4s_vid_out_0_vid_io_out] [get_bd_cells v_axi4s_vid_out_0]
+regenerate_bd_layout
+connect_bd_intf_net [get_bd_intf_pins dvi2rgb_0/RGB] [get_bd_intf_pins rgb2dvi_0/RGB]
+make_wrapper -files [get_files D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.srcs/sources_1/bd/hdmi_inout_bd/hdmi_inout_bd.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/SDUP_proj/hdmi_inout_kopiaZapasowa/hdmi_inout_kopiaZapasowa/hdmi_inout.runs/impl_1/hdmi_inout_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+regenerate_bd_layout
+save_bd_design
